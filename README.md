@@ -1,7 +1,7 @@
 # SAE: CSS Advanced
 
-Dozent: Simon Jäger
-Blöcke: 8 * 3h
+Dozent: Simon Jäger  
+Blöcke: 8 x 3h
 
 ## Intro
 
