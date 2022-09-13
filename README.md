@@ -10,7 +10,7 @@ Blöcke: 8 * 3h
 
 ## Reset und Variablen
 
-[📁 files](010-reset-and-variables)
+[📁 Files](010-reset-and-variables)
 
 - Theorie
 - ✍ Farbpalette einer bekannter Website als CSS-Vars, präsentieren
