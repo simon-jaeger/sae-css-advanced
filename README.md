@@ -7,6 +7,7 @@ Blöcke: 8 x 3h
 
 - Überblick
 - ✍ Vorstellungsrunde
+- [📚 Interneting is Hard: HTML and CSS](https://www.internetingishard.com/)
 
 ## Reset und Variablen
 
