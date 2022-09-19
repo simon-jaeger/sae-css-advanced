@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="/000-shared/reset.css" />
+    <link rel="stylesheet" href="/000-shared/variables.css" />
+    <style>
+      body {
+        background: var(--gray8);
+        color: var(--gray3);
+        padding: 16px;
+      }
+      body > * {
+        margin-bottom: 24px;
+      }
+      .container {
+        background: var(--gray9);
+        display: flex;
+        gap: 8px; /* Regelmässiger Mindestabstand zwischen Kindern, unabhängig von padding/margin/justify-content/align-items */
+      }
+      .item {
+        background: var(--gray7);
+        padding: 16px;
+        border-top: 1px solid #64748b;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  Mit display:flex aktiviert man den Flexbox-Modus für das Layout der direkten Kinder -->
+    <div class="container">
+      <div class="item">r</div>
+      <div class="item">o</div>
+      <div class="item">w</div>
+    </div>
+
+    <!-- flex-direction definiert die Richtung: row (horizontal), column (vertikal) -->
+    <div class="container" style="flex-direction: column">
+      <div class="item">c</div>
+      <div class="item">o</div>
+      <div class="item">l</div>
+    </div>
+
+    <!-- Die Verteilung entlang der Achsen wird definiert mit: justify-content (horizontal), align-items (vertikal) -->
+    <!-- Beachte, änderst du flex-direction auf column gilt: justify-content (vertikal), align-items (horizontal) -->
+    <div
+      class="container"
+      style="min-height: 120px; justify-content: center; align-items: end"
+    >
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+    </div>
+
+    <!-- margin: auto auf einem Kind schiebt die Geschwister beiseite -->
+    <div class="container">
+      <div class="item" style="margin-right: auto">m</div>
+      <div class="item">au</div>
+      <div class="item">to</div>
+    </div>
+
+    <!-- flex: 1 auf einem Kind lässt es wachsen -->
+    <!-- Haben mehrere Kinder diese Eigenschaft, führt eine grössere Nummer zu verhältnismässigem Wachstum -->
+    <div class="container">
+      <div class="item" style="flex: 1">1</div>
+      <div class="item">0</div>
+      <div class="item">0</div>
+    </div>
+    <div class="container">
+      <div class="item">0</div>
+      <div class="item" style="flex: 1">1</div>
+      <div class="item" style="flex: 2">2</div>
+    </div>
+    <div class="container">
+      <div class="item" style="flex: 1">1</div>
+      <div class="item" style="flex: 1">1</div>
+      <div class="item" style="flex: 1">1</div>
+    </div>
+
+    <!-- Mit overflow-x: auto kannst du den Container scrollbar machen -->
+    <div class="container" style="overflow-x: auto">
+      <div class="item">lorem</div>
+      <div class="item">ipsum</div>
+      <div class="item">dolor</div>
+      <div class="item">sit</div>
+      <div class="item">amet</div>
+      <div class="item">consectetur</div>
+      <div class="item">adipiscing</div>
+      <div class="item">elit</div>
+    </div>
+  </body>
+</html>
