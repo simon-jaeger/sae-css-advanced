@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>...</title>
+    <link rel="stylesheet" href="/000-shared/reset.css" />
+    <link rel="stylesheet" href="/000-shared/variables.css" />
+    <style>
+      body {
+        padding: 1rem;
+        background: var(--gray1);
+        color: var(--gray9);
+      }
+
+      .product {
+        max-width: 320px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .image {
+        width: 100%;
+      }
+      .text {
+        padding: 24px;
+      }
+      .heading {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .price {
+        color: var(--gray4);
+      }
+      .sizes {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 32px;
+      }
+      .sizes > button {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .sizes > button:first-child {
+        background: var(--gray9);
+        color: white;
+        font-weight: 600;
+      }
+      .actions {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .actions > button {
+        height: 40px;
+        padding: 0 24px;
+        font-weight: 600;
+        border: 1px solid var(--gray3);
+        border-radius: 6px;
+        text-align: center;
+      }
+      .actions > button:first-child {
+        background: var(--gray9);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="product">
+      <img
+        class="image"
+        src="https://via.placeholder.com/400x200?text=?"
+        alt="Product"
+      />
+      <div class="text">
+        <h2 class="heading">
+          <span>Some Fancy Jacket</span>
+          <span class="price">$110.00</span>
+        </h2>
+        <div class="sizes">
+          <button>XS</button>
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+        <div class="actions">
+          <button>Buy now</button>
+          <button>Infos</button>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>

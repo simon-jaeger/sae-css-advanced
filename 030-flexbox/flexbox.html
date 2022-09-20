@@ -10,15 +10,15 @@
       body {
         background: var(--gray8);
         color: var(--gray3);
-        padding: 16px;
+        padding: 1rem;
       }
       body > * {
-        margin-bottom: 24px;
+        margin-bottom: 1rem;
       }
       .container {
         background: var(--gray9);
         display: flex;
-        gap: 8px; /* Regelmässiger Mindestabstand zwischen Kindern, unabhängig von padding/margin/justify-content/align-items */
+        gap: 8px;
       }
       .item {
         background: var(--gray7);
@@ -29,40 +29,54 @@
     </style>
   </head>
   <body>
-    <!--  Mit display:flex aktiviert man den Flexbox-Modus für das Layout der direkten Kinder -->
+    <!--  mit display:flex aktiviert man den flexbox-modus für das layout der direkten kinder -->
     <div class="container">
       <div class="item">r</div>
       <div class="item">o</div>
       <div class="item">w</div>
     </div>
 
-    <!-- flex-direction definiert die Richtung: row (horizontal), column (vertikal) -->
+    <!-- flex-direction definiert die richtung: row (x), column (y) -->
     <div class="container" style="flex-direction: column">
       <div class="item">c</div>
       <div class="item">o</div>
       <div class="item">l</div>
     </div>
 
-    <!-- Die Verteilung entlang der Achsen wird definiert mit: justify-content (horizontal), align-items (vertikal) -->
-    <!-- Beachte, änderst du flex-direction auf column gilt: justify-content (vertikal), align-items (horizontal) -->
+    <!-- die verteilung entlang der achsen wird definiert mit: justify-content (main axis), align-items (cross axis) -->
+    <!-- row: main axis = x, cross axis = y -->
+    <!-- column: main axis = y, cross axis = x -->
     <div
       class="container"
-      style="min-height: 120px; justify-content: center; align-items: end"
+      style="
+        min-height: 6rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      "
     >
       <div class="item">a</div>
       <div class="item">b</div>
       <div class="item">c</div>
     </div>
 
-    <!-- margin: auto auf einem Kind schiebt die Geschwister beiseite -->
+    <!-- align-self: richtet ein einzelnes kind aus -->
+    <!-- order: überschreibt die natürliche reihenfolge eines kindes, vergleichbar mit z-index  -->
+    <div class="container" style="min-height: 6rem; align-items: flex-end">
+      <div class="item" style="align-self: flex-start">a</div>
+      <div class="item" style="order: 999">b</div>
+      <div class="item">c</div>
+    </div>
+
+    <!-- margin: auto auf einem kind schiebt die geschwister beiseite -->
     <div class="container">
       <div class="item" style="margin-right: auto">m</div>
       <div class="item">au</div>
       <div class="item">to</div>
     </div>
 
-    <!-- flex: 1 auf einem Kind lässt es wachsen -->
-    <!-- Haben mehrere Kinder diese Eigenschaft, führt eine grössere Nummer zu verhältnismässigem Wachstum -->
+    <!-- flex: 1 auf einem kind lässt es wachsen -->
+    <!-- haben mehrere kinder diese eigenschaft, führt eine grössere nummer zu verhältnismässigem wachstum -->
     <div class="container">
       <div class="item" style="flex: 1">1</div>
       <div class="item">0</div>
@@ -79,7 +93,7 @@
       <div class="item" style="flex: 1">1</div>
     </div>
 
-    <!-- Mit overflow-x: auto kannst du den Container scrollbar machen -->
+    <!-- mit overflow-x: auto kannst du den container scrollbar machen -->
     <div class="container" style="overflow-x: auto">
       <div class="item">lorem</div>
       <div class="item">ipsum</div>
