@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <link rel="stylesheet" href="/000-shared/reset.css" />
+    <link rel="stylesheet" href="/000-shared/variables.css" />
+    <style></style>
+  </head>
+  <style>
+    body {
+      background: var(--gray8);
+      color: var(--gray3);
+      padding: 1rem;
+    }
+    body > * {
+      margin-bottom: 1rem;
+    }
+    .grid {
+      background: var(--gray9);
+      width: max-content;
+      display: grid;
+      gap: 8px; /* gleicher gap für row und column */
+      grid-template-columns: repeat(
+        4,
+        50px
+      ); /* repeat-funktion zum einfachen wiederholen */
+      grid-template-rows: repeat(4, 50px);
+    }
+    .item {
+      background: var(--gray7);
+      padding: 0.5rem;
+      border-top: 1px solid var(--gray5);
+      text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <!-- benutze grid-column/grid-row, um ein elemente über mehrere zellen zu strecken -->
+    <!-- falls nicht explizit definiert, nimmt jedes kind eine zelle platz ein und positioniert sich automatisch -->
+    <div class="grid">
+      <div class="item" style="grid-column: span 4; grid-row: span 2">a</div>
+      <div class="item" style="grid-column: span 2">b</div>
+      <div class="item" style="grid-row: span 2">c</div>
+    </div>
+
+    <!-- du kannst elemente auch mit genauen koordinaten platzieren: grid-column: x/y; -->
+    <!-- die koordinaten beginnen bei 1 und gehen bis anzahl spalten+1/reihen+1 -->
+    <!-- so positionierte kidner können sich auch überlappen -->
+    <div class="grid">
+      <div class="item" style="grid-column: 2/4; grid-row: 1/5">a</div>
+      <div class="item" style="grid-column: 1/5; grid-row: 2/4">b</div>
+    </div>
+  </body>
+</html>
