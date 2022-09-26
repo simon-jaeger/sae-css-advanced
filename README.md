@@ -33,7 +33,7 @@ Blöcke: 8 x 3h
 - Flexbox
 - [🎞️ CSS Flexbox in 100 Seconds](https://www.youtube.com/watch?v=K74l26pE4YA)
 - [📚 A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [📚 Flexbox in CSS](https://cssreference.io/flexbox/)
+- [📚 Flexbox visual reference](https://cssreference.io/flexbox/)
 - [📄 Flexbox Cheatsheet](https://raw.githubusercontent.com/eludadev/css-docs/main/assets/css_flexbox.png)
 - ✍ Baue die Flexbox-Puzzle nach
 - ✍ Baue die Beispiele nach
@@ -45,3 +45,12 @@ Blöcke: 8 x 3h
 - Media Queries
 - Breakpoints
 - ✍ Identifiziere die Breakpoints einee Website deiner Wahl
+
+## CSS Grid
+
+- CSS Grid
+- [🎞️ CSS Grid in 100 Seconds](https://www.youtube.com/watch?v=uuOXPWCh-6o)
+- [📚 A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [📚 Grid visual reference](https://cssreference.io/css-grid/)
+- [📄 Grid Cheatsheet](https://raw.githubusercontent.com/eludadev/css-docs/main/assets/css_grid.png)
+- [🧰 Visual grid builder](https://grid.layoutit.com)
