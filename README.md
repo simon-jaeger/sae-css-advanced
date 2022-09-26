@@ -37,3 +37,11 @@ Blöcke: 8 x 3h
 - [📄 Flexbox Cheatsheet](https://raw.githubusercontent.com/eludadev/css-docs/main/assets/css_flexbox.png)
 - ✍ Baue die Flexbox-Puzzle nach
 - ✍ Baue die Beispiele nach
+
+## Media Queries
+
+[📁 Files](040-media-queries)
+
+- Media Queries
+- Breakpoints
+- ✍ Identifiziere die Breakpoints einee Website deiner Wahl
