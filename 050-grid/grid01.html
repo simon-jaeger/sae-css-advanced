@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>grid</title>
+    <link rel="stylesheet" href="/000-shared/reset.css">
+    <link rel="stylesheet" href="/000-shared/variables.css">
+    <style></style>
+  </head>
+  <style>
+    body {
+      background: var(--gray8);
+      color: var(--gray3);
+      padding: 1rem;
+    }
+    body > * {
+      margin-bottom: 1rem;
+    }
+    .grid {
+      background: var(--gray9);
+      width: max-content;
+      display: grid; /* aktiviere grid */
+      column-gap: 8px; /* gap zwischen spalten */
+      row-gap: 8px; /* gap zwischen reihen */
+      grid-template-columns: 100px 100px 100px; /* spaltendefiniton: 3 spalten a 100px */
+      grid-template-rows: 100px 100px 100px; /* reihendefiniton: 3 reihen a 100px */
+    }
+    .item {
+      background: var(--gray7);
+      padding: 1rem;
+      border-top: 1px solid var(--gray5);
+      text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <!-- aktiviere 'grid overlay' in den devtools für eine visualisierung des grids -->
+    <div class="grid">
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">d</div>
+      <div class="item">e</div>
+      <div class="item">f</div>
+      <div class="item">g</div>
+    </div>
+
+    <!-- mit grid-auto-flow kann die flussrichtung definiert werden -->
+    <div class="grid" style="grid-auto-flow: column;">
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">d</div>
+      <div class="item">e</div>
+      <div class="item">f</div>
+      <div class="item">g</div>
+    </div>
+
+    <!-- mit grid-auto-rows/grid-auto-columns wird die grösse automatisch ersteller spalten und reihen definiert -->
+    <!-- diese werden generiert, wenn mehr kinder definiert werden, als eigentlich platz haben -->
+    <div class="grid" style="grid-auto-rows: 50px;">
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">d</div>
+      <div class="item">e</div>
+      <div class="item">f</div>
+      <div class="item">g</div>
+      <div class="item">h</div>
+      <div class="item">i</div>
+      <div class="item">j</div>
+      <div class="item">k</div>
+      <div class="item">l</div>
+    </div>
+
+  </body>
+</html>

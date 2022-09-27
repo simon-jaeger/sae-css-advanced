@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>...</title>
+    <link rel="stylesheet" href="/000-shared/reset.css" />
+    <link rel="stylesheet" href="/000-shared/variables.css" />
+  </head>
+  <style>
+    body {
+      background: var(--gray8);
+      color: var(--gray3);
+      padding: 1rem;
+    }
+    body > * {
+      margin-bottom: 1rem;
+    }
+    .grid {
+      background: var(--gray9);
+      width: max-content;
+      display: grid;
+      column-gap: 8px;
+      row-gap: 8px;
+      grid-template-columns: 50px 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px 50px;
+    }
+    .item {
+      background: var(--gray7);
+      padding: 0.5rem;
+      border-top: 1px solid var(--gray5);
+      text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <div class="grid">
+      <div class="item">a</div>
+      <div class="item" style="grid-row: span 2">b</div>
+      <div class="item" style="grid-row: span 3">c</div>
+      <div class="item" style="grid-row: span 4">d</div>
+    </div>
+
+    <div class="grid" style="grid-auto-flow: column">
+      <div class="item">a</div>
+      <div class="item" style="grid-column: span 2">b</div>
+      <div class="item" style="grid-column: span 3">c</div>
+      <div class="item" style="grid-column: span 4">d</div>
+    </div>
+
+    <div class="grid">
+      <div class="item">a</div>
+      <div class="item" style="grid-column: 2/3; grid-row: 2/3">b</div>
+      <div class="item" style="grid-column: 3/4; grid-row: 3/4">c</div>
+      <div class="item" style="grid-column: 4/5; grid-row: 4/5">d</div>
+    </div>
+
+    <div class="grid">
+      <div class="item" style="grid-column: 1/4; grid-row: 1/2;">a</div>
+      <div class="item" style="grid-column: 4/5; grid-row: 1/4;">b</div>
+      <div class="item" style="grid-column: 2/5; grid-row: 4/5;">c</div>
+      <div class="item" style="grid-column: 1/2; grid-row: 2/5;">d</div>
+      <div class="item" style="grid-column: 2/4; grid-row: 2/4;">e</div>
+    </div>
+  </body>
+</html>

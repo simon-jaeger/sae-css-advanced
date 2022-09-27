@@ -374,3 +374,7 @@ button {
   text-align: left;
   border: 0;
 }
+
+input {
+  border: 0;
+}

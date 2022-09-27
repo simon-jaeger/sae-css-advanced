@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>...</title>
+    <link rel="stylesheet" href="/000-shared/reset.css">
+    <link rel="stylesheet" href="/000-shared/variables.css">
+    <style>
+      body {
+        background-color: var(--gray9);
+        color: var(--gray3);
+      }
+      .nav {
+        background-color: var(--gray7);
+        position: sticky;
+        top: 0;
+        height: 3.5rem;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+      }
+      .logo {
+        margin-right: auto;
+        font-size: 1.5rem;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #1E293B;
+      }
+      .links > a {
+        display: block;
+        text-align: right;
+        padding: 1rem;
+      }
+      .main {
+        padding: 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+        color: var(--gray4);
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media (min-width: 400px) {
+        .burger {
+          display: none;
+        }
+        .links {
+          position: static;
+          background: transparent;
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#" class="logo">★</a>
+      <button class="burger" onclick="links.classList.toggle('hidden')">☰</button>
+      <div class="links" id="links">
+        <a href="#">Product</a>
+        <a href="#">Features</a>
+        <a href="#">Login</a>
+      </div>
+    </nav>
+
+    <main class="main">
+      Duis a tellus nec ipsum cursus iaculis a ut ante. Praesent sapien arcu,
+      facilisis eget arcu sit amet, fermentum malesuada lectus. Quisque vel
+      rhoncus dolor. Ut egestas nulla a dolor consequat, egestas consectetur
+      enim mollis. In porta elementum sem id pretium. Mauris pellentesque, magna
+      sit amet aliquet suscipit, ligula nisl blandit sem, nec ornare nisl risus
+      a neque. Donec vitae nulla sagittis, fermentum dolor eu, aliquam quam.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+      cubilia Curae. Sed fringilla orci vitae felis consequat pulvinar. Nullam
+      eget ex eget eros tincidunt ullamcorper. Maecenas iaculis, est consequat
+      pharetra accumsan, nibh eros venenatis eros, in vulputate dui sem vitae
+      elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae. Vestibulum eu augue sem.
+      Duis a tellus nec ipsum cursus iaculis a ut ante. Praesent sapien arcu,
+      facilisis eget arcu sit amet, fermentum malesuada lectus. Quisque vel
+      rhoncus dolor. Ut egestas nulla a dolor consequat, egestas consectetur
+      enim mollis. In porta elementum sem id pretium. Mauris pellentesque, magna
+      sit amet aliquet suscipit, ligula nisl blandit sem, nec ornare nisl risus
+      a neque. Donec vitae nulla sagittis, fermentum dolor eu, aliquam quam.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+      cubilia Curae. Sed fringilla orci vitae felis consequat pulvinar. Nullam
+      eget ex eget eros tincidunt ullamcorper. Maecenas iaculis, est consequat
+      pharetra accumsan, nibh eros venenatis eros, in vulputate dui sem vitae
+      elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae. Vestibulum eu augue sem.
+      Duis a tellus nec ipsum cursus iaculis a ut ante. Praesent sapien arcu,
+      facilisis eget arcu sit amet, fermentum malesuada lectus. Quisque vel
+      rhoncus dolor. Ut egestas nulla a dolor consequat, egestas consectetur
+      enim mollis. In porta elementum sem id pretium. Mauris pellentesque, magna
+      sit amet aliquet suscipit, ligula nisl blandit sem, nec ornare nisl risus
+      a neque. Donec vitae nulla sagittis, fermentum dolor eu, aliquam quam.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+      cubilia Curae. Sed fringilla orci vitae felis consequat pulvinar. Nullam
+      eget ex eget eros tincidunt ullamcorper. Maecenas iaculis, est consequat
+      pharetra accumsan, nibh eros venenatis eros, in vulputate dui sem vitae
+      elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae. Vestibulum eu augue sem.
+      Duis a tellus nec ipsum cursus iaculis a ut ante. Praesent sapien arcu,
+      facilisis eget arcu sit amet, fermentum malesuada lectus. Quisque vel
+      rhoncus dolor. Ut egestas nulla a dolor consequat, egestas consectetur
+      enim mollis. In porta elementum sem id pretium. Mauris pellentesque, magna
+      sit amet aliquet suscipit, ligula nisl blandit sem, nec ornare nisl risus
+      a neque. Donec vitae nulla sagittis, fermentum dolor eu, aliquam quam.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+      cubilia Curae. Sed fringilla orci vitae felis consequat pulvinar. Nullam
+      eget ex eget eros tincidunt ullamcorper. Maecenas iaculis, est consequat
+      pharetra accumsan, nibh eros venenatis eros, in vulputate dui sem vitae
+      elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae. Vestibulum eu augue sem.
+    </main>
+  </body>
+</html>
