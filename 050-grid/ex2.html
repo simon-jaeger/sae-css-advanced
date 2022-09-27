@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>calculator</title>
+    <link rel="stylesheet" href="/000-shared/reset.css">
+    <link rel="stylesheet" href="/000-shared/variables.css">
+    <script src="ex2.js" defer></script>
+    <style>
+      body {
+        background: black;
+        color: var(--gray1);
+        padding: 32px;
+      }
+      .calculator {
+        display: grid;
+        gap: 4px;
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(6, 80px);
+      }
+      .calculator > input {
+        background: var(--gray1);
+        color: var(--gray7);
+        text-align: right;
+        padding: 1rem;
+        font-size: 2rem;
+        font-family: monospace;
+      }
+      .calculator > button {
+        background: var(--gray7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="calculator">
+      <input
+        aria-label="display"
+        placeholder="0"
+        style="grid-column: span 4"
+      >
+
+      <button style="grid-column: span 2; background: var(--gray8);">C</button>
+      <button style="background: var(--gray8);">*</button>
+      <button style="background: var(--gray8);">/</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button style="background: var(--gray8);">-</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button style="background: var(--gray8);">+</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button style="grid-row: span 2; background: #D97706;">=</button>
+
+      <button style="grid-column: span 2;">0</button>
+      <button>.</button>
+    </article>
+  </body>
+</html>

@@ -22,11 +22,8 @@
       width: max-content;
       display: grid;
       gap: 8px; /* gleicher gap für row und column */
-      grid-template-columns: repeat(
-        4,
-        50px
-      ); /* repeat-funktion zum einfachen wiederholen */
-      grid-template-rows: repeat(4, 50px);
+      grid-template-columns: 50px 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px 50px;
     }
     .item {
       background: var(--gray7);
@@ -46,7 +43,7 @@
 
     <!-- du kannst elemente auch mit genauen koordinaten platzieren: grid-column: x/y; -->
     <!-- die koordinaten beginnen bei 1 und gehen bis anzahl spalten+1/reihen+1 -->
-    <!-- so positionierte kidner können sich auch überlappen -->
+    <!-- so positionierte kinder können sich auch überlappen -->
     <div class="grid">
       <div class="item" style="grid-column: 2/4; grid-row: 1/5">a</div>
       <div class="item" style="grid-column: 1/5; grid-row: 2/4">b</div>
