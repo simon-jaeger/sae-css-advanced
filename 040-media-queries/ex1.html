@@ -11,7 +11,7 @@
         background-color: var(--gray9);
         color: var(--gray3);
       }
-      .header {
+      .nav {
         background-color: var(--gray7);
         position: sticky;
         top: 0;
@@ -24,7 +24,7 @@
         margin-right: auto;
         font-size: 1.5rem;
       }
-      .nav {
+      .links {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -33,19 +33,19 @@
         right: 0;
         background: #1E293B;
       }
-      .nav > a {
+      .links > a {
         display: block;
         text-align: right;
-        padding: 16px;
+        padding: 1rem;
       }
       .main {
         padding: 1rem;
-        max-width: 480px;
+        max-width: 600px;
         margin: 0 auto;
         color: var(--gray4);
       }
 
-      [hidden] {
+      .hidden {
         display: none;
       }
 
@@ -53,7 +53,7 @@
         .burger {
           display: none;
         }
-        .nav {
+        .links {
           position: static;
           background: transparent;
           flex-direction: row;
@@ -62,15 +62,16 @@
     </style>
   </head>
   <body>
-    <header class="header">
+    <nav class="nav">
       <a href="#" class="logo">★</a>
-      <button class="burger" onclick="nav.hidden = !nav.hidden">☰</button>
-      <nav class="nav" id="nav">
+      <button class="burger" onclick="links.classList.toggle('hidden')">☰</button>
+      <div class="links" id="links">
         <a href="#">Product</a>
         <a href="#">Features</a>
         <a href="#">Login</a>
-      </nav>
-    </header>
+      </div>
+    </nav>
+
     <main class="main">
       Duis a tellus nec ipsum cursus iaculis a ut ante. Praesent sapien arcu,
       facilisis eget arcu sit amet, fermentum malesuada lectus. Quisque vel

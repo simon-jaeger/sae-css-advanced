@@ -48,8 +48,12 @@ Blöcke: 8 x 3h
 
 ## CSS Grid
 
-- CSS Grid
+- Grid parent
+- Grid children 
+- ✍ Baue die Grid-Puzzle nach
+- ✍ Baue den Rechner nach
 - [🎞️ CSS Grid in 100 Seconds](https://www.youtube.com/watch?v=uuOXPWCh-6o)
+- [🎞️ CSS Grid by Wes Bos](https://www.youtube.com/playlist?list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG)
 - [📚 A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [📚 Grid visual reference](https://cssreference.io/css-grid/)
 - [📄 Grid Cheatsheet](https://raw.githubusercontent.com/eludadev/css-docs/main/assets/css_grid.png)
