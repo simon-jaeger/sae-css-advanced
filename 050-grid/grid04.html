@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <link rel="stylesheet" href="/000-shared/reset.css" />
+    <link rel="stylesheet" href="/000-shared/variables.css" />
+    <style></style>
+  </head>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    .autoGrid {
+      display: grid;
+      /* auto-fill in kombination mit minmax kreiert hoch-responsive grids ganz ohne media queries */
+      /* sobald eine weitere spalte gemäss minimum (hier 200px) platz hat, wird sie erstellt */
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  </style>
+  <body>
+    <div class="autoGrid">
+      <img class="photo" src="https://picsum.photos/400?random=1" alt="???" />
+      <img class="photo" src="https://picsum.photos/400?random=2" alt="???" />
+      <img class="photo" src="https://picsum.photos/400?random=3" alt="???" />
+      <img class="photo" src="https://picsum.photos/400?random=4" alt="???" />
+      <img class="photo" src="https://picsum.photos/400?random=5" alt="???" />
+      <img class="photo" src="https://picsum.photos/400?random=6" alt="???" />
+    </div>
+  </body>
+</html>
