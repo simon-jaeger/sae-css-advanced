@@ -49,13 +49,22 @@ Blöcke: 8 x 3h
 ## CSS Grid
 
 - Grid parent
-- Grid children 
+- Grid children
 - repeat() und fr
+- auto-fill, auto-fit und minmax
+- Grid areas
 - [🎞️ CSS Grid in 100 Seconds](https://www.youtube.com/watch?v=uuOXPWCh-6o)
 - [🎞️ CSS Grid by Wes Bos](https://www.youtube.com/playlist?list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG)
 - [📚 A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [📚 Grid visual reference](https://cssreference.io/css-grid/)
+- [📄 auto-fit vs auto-fill](https://defensivecss.dev/tip/auto-fit-fill/)
 - [🧰 Visual grid builder](https://grid.layoutit.com)
 - ✍ Baue die Grid-Puzzle nach
 - ✍ Baue den Rechner nach
 - ✍ Baue eine Bildergallerie mit Grid
+- ✍ Baue eine Layout mit Grid Areas
+- ✍ Zeichne Pixel Art mit Grid
+
+## Grid VS Flexbox
+
+- ✍ Wähle 1 - 3 Designs von https://lookup.design. Zeichne grüne Boxen über Flex-Container und blaue Boxen über Grid-Container. Zeige deine Analyse der Klasse.
