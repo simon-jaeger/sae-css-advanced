@@ -6,27 +6,26 @@
     <title>grid</title>
     <link rel="stylesheet" href="/000-shared/reset.css" />
     <link rel="stylesheet" href="/000-shared/variables.css" />
-    <style></style>
-  </head>
-  <style>
-    body {
-      background-color: var(--gray9);
-      color: var(--gray2);
-    }
-
-    @media (min-width: 500px) {
-      .layout {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 200px 1fr;
-        grid-template-rows: 3rem 1fr 2rem;
-        grid-template-areas:
-          "top top top"
-          "left main main"
-          "left bottom bottom";
+    <style>
+      body {
+        background-color: var(--gray9);
+        color: var(--gray2);
       }
-    }
-  </style>
+
+      @media (min-width: 500px) {
+        .layout {
+          height: 100vh;
+          display: grid;
+          grid-template-columns: 200px 1fr;
+          grid-template-rows: 3rem 1fr 2rem;
+          grid-template-areas:
+            "top top"
+            "left main"
+            "left bottom";
+        }
+      }
+    </style>
+  </head>
   <body>
     <div class="layout">
       <nav style="grid-area: top; background: var(--gray7)">nav</nav>

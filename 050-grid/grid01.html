@@ -6,33 +6,32 @@
     <title>grid</title>
     <link rel="stylesheet" href="/000-shared/reset.css">
     <link rel="stylesheet" href="/000-shared/variables.css">
-    <style></style>
+    <style>
+      body {
+        background: var(--gray8);
+        color: var(--gray3);
+        padding: 1rem;
+      }
+      body > * {
+        margin-bottom: 1rem;
+      }
+      .grid {
+        background: var(--gray9);
+        width: max-content;
+        display: grid; /* aktiviere grid */
+        column-gap: 8px; /* gap zwischen spalten */
+        row-gap: 8px; /* gap zwischen reihen */
+        grid-template-columns: 100px 100px 100px; /* spaltendefiniton: 3 spalten a 100px */
+        grid-template-rows: 100px 100px 100px; /* reihendefiniton: 3 reihen a 100px */
+      }
+      .item {
+        background: var(--gray7);
+        padding: 1rem;
+        border-top: 1px solid var(--gray5);
+        text-transform: uppercase;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      background: var(--gray8);
-      color: var(--gray3);
-      padding: 1rem;
-    }
-    body > * {
-      margin-bottom: 1rem;
-    }
-    .grid {
-      background: var(--gray9);
-      width: max-content;
-      display: grid; /* aktiviere grid */
-      column-gap: 8px; /* gap zwischen spalten */
-      row-gap: 8px; /* gap zwischen reihen */
-      grid-template-columns: 100px 100px 100px; /* spaltendefiniton: 3 spalten a 100px */
-      grid-template-rows: 100px 100px 100px; /* reihendefiniton: 3 reihen a 100px */
-    }
-    .item {
-      background: var(--gray7);
-      padding: 1rem;
-      border-top: 1px solid var(--gray5);
-      text-transform: uppercase;
-    }
-  </style>
   <body>
     <!-- aktiviere 'grid overlay' in den devtools für eine visualisierung des grids -->
     <div class="grid">

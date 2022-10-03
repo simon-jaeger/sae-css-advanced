@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mario</title>
+    <link rel="stylesheet" href="/000-shared/reset.css" />
+    <link rel="stylesheet" href="/000-shared/variables.css" />
+    <style>
+      body {
+        background-color: black;
+      }
+      .level {
+        background-color: #5c93fc;
+        display: grid;
+        width: max-content;
+        image-rendering: pixelated;
+        grid-template-columns: repeat(20, 16px);
+        grid-template-rows: repeat(10, 16px);
+      }
+      .ground {
+        background-image: url("sprites/ground.png");
+        background-repeat: repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="level">
+      <div class="ground" style="grid-column: 1/-1; grid-row: 9/11" />
+    </div>
+  </body>
+</html>

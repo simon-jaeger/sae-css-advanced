@@ -6,32 +6,31 @@
     <title>grid</title>
     <link rel="stylesheet" href="/000-shared/reset.css" />
     <link rel="stylesheet" href="/000-shared/variables.css" />
-    <style></style>
+    <style>
+      body {
+        background: var(--gray8);
+        color: var(--gray3);
+        padding: 1rem;
+      }
+      body > * {
+        margin-bottom: 1rem;
+      }
+      .grid {
+        background: var(--gray9);
+        width: max-content;
+        display: grid;
+        gap: 8px; /* gleicher gap für row und column */
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px;
+      }
+      .item {
+        background: var(--gray7);
+        padding: 0.5rem;
+        border-top: 1px solid var(--gray5);
+        text-transform: uppercase;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      background: var(--gray8);
-      color: var(--gray3);
-      padding: 1rem;
-    }
-    body > * {
-      margin-bottom: 1rem;
-    }
-    .grid {
-      background: var(--gray9);
-      width: max-content;
-      display: grid;
-      gap: 8px; /* gleicher gap für row und column */
-      grid-template-columns: 50px 50px 50px 50px;
-      grid-template-rows: 50px 50px 50px 50px;
-    }
-    .item {
-      background: var(--gray7);
-      padding: 0.5rem;
-      border-top: 1px solid var(--gray5);
-      text-transform: uppercase;
-    }
-  </style>
   <body>
     <!-- benutze grid-column/grid-row, um ein elemente über mehrere zellen zu strecken -->
     <!-- falls nicht explizit definiert, nimmt jedes kind eine zelle platz ein und positioniert sich automatisch -->

@@ -33,6 +33,10 @@
         justify-content: center;
         align-items: center;
       }
+
+      .calculator > button.buttonDark {
+        background: var(--gray8);
+      }
     </style>
   </head>
   <body>
@@ -40,11 +44,11 @@
       <input
         aria-label="display"
         placeholder="0"
-        style="grid-column: span 4"
+        style="grid-column: 1/-1"
       >
 
       <button style="grid-column: span 2; background: var(--gray8);">C</button>
-      <button style="background: var(--gray8);">*</button>
+      <button class="buttonDark">*</button>
       <button style="background: var(--gray8);">/</button>
 
       <button>7</button>
