@@ -63,8 +63,11 @@ Blöcke: 8 x 3h
 - ✍ Baue den Rechner nach
 - ✍ Baue eine Bildergallerie mit Grid
 - ✍ Baue eine Layout mit Grid Areas
-- ✍ Zeichne Pixel Art mit Grid
 
 ## Grid VS Flexbox
 
 - ✍ Wähle 1 - 3 Designs von https://lookup.design. Zeichne grüne Boxen über Flex-Container und blaue Boxen über Grid-Container. Zeige deine Analyse der Klasse.
+
+## Retro game dev with css grid
+
+- ✍ Designe eine Super Mario Level
