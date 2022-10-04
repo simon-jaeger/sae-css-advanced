@@ -64,10 +64,9 @@ Blöcke: 8 x 3h
 - ✍ Baue eine Bildergallerie mit Grid
 - ✍ Baue eine Layout mit Grid Areas
 
-## Grid VS Flexbox
-
-- ✍ Wähle 1 - 3 Designs von https://lookup.design. Zeichne grüne Boxen über Flex-Container und blaue Boxen über Grid-Container. Zeige deine Analyse der Klasse.
-
 ## Extra
 
+- ✍ Wähle 1 - 3 Designs von https://lookup.design. Zeichne grüne Boxen über
+  Flex-Container und blaue Boxen über Grid-Container. Zeige deine Analyse der
+  Klasse.
 - ✍ Designe ein Super Mario Level
