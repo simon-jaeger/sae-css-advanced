@@ -12,7 +12,7 @@
       body {
         background-color: black;
         color: white;
-        font-family: 'Press Start 2P', monospace;
+        font-family: "Press Start 2P", monospace;
         margin: 0;
       }
       .level {
@@ -49,10 +49,14 @@
       }
 
       .ui {
+        box-sizing: border-box;
         position: absolute;
         top: 0;
+        width: 320px;
         font-size: 8px;
         padding: 8px;
+        display: flex;
+        justify-content: space-between;
       }
     </style>
   </head>
@@ -74,7 +78,9 @@
     </div>
 
     <div class="ui">
-      World 1-1
+      <span>Mario</span>
+      <span>World 1-1</span>
+      <span>Time 300</span>
     </div>
   </body>
 </html>

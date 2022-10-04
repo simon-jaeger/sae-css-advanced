@@ -62,10 +62,12 @@ Blöcke: 8 x 3h
 - ✍ Baue die Grid-Puzzle nach
 - ✍ Baue den Rechner nach
 - ✍ Baue eine Bildergallerie mit Grid
-- ✍ Baue eine Layout mit Grid Areas
+- ✍ Baue ein Layout mit Grid Areas
 
 ## Extra
 
+- ✍ Kahoot Quiz:
+  https://create.kahoot.it/details/25085387-1974-4adc-bda0-49e3dd605d01
 - ✍ Wähle 1 - 3 Designs von https://lookup.design. Zeichne grüne Boxen über
   Flex-Container und blaue Boxen über Grid-Container. Zeige deine Analyse der
   Klasse.
