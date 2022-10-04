@@ -68,6 +68,6 @@ Blöcke: 8 x 3h
 
 - ✍ Wähle 1 - 3 Designs von https://lookup.design. Zeichne grüne Boxen über Flex-Container und blaue Boxen über Grid-Container. Zeige deine Analyse der Klasse.
 
-## Retro game dev with css grid
+## Extra
 
-- ✍ Designe eine Super Mario Level
+- ✍ Designe ein Super Mario Level
