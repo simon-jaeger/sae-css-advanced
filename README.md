@@ -7,11 +7,10 @@ fortgeschritenes css. (8 * 3h)
 
 ## themen
 
-- projektstruktur und basis
 - flexbox
 - grid
-- css custom properties (variables)
 - responsive design
+- css custom properties (variables)
 
 ## weitere ressourcen
 
