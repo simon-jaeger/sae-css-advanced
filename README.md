@@ -9,13 +9,11 @@ fortgeschritenes css. (8 * 3h)
 
 - flexbox
 - grid
-- responsive design
-- css custom properties (variables)
+- media queries
 
 ## weitere ressourcen
 
 - https://www.internetingishard.com
-- https://css-tricks.com/a-complete-guide-to-custom-properties/
 - https://cssreference.io/flexbox/
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://cssreference.io/css-grid/
