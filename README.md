@@ -18,3 +18,4 @@ fortgeschritenes css. (8 * 3h)
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://cssreference.io/css-grid/
 - https://css-tricks.com/snippets/css/complete-guide-grid/
+- https://css-tricks.com/a-complete-guide-to-css-media-queries/

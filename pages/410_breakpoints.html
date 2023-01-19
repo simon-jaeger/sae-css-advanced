@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      /* default */
+      .title {
+        font-size: 2rem;
+      }
+      .grid {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      /* if screen width >= 768px (tablet) */
+      @media (min-width: 768px) {
+        .title {
+          font-size: 4rem;
+        }
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* if screen width >= 1280px (desktop) */
+      @media (min-width: 1280px) {
+        .title {
+          font-size: 8rem;
+        }
+        .grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="title">breakpoints</h1>
+    <p>media queries for certain screen sizes.</p>
+    <div class="grid">
+      <div style="background: #999; padding: 20px"></div>
+      <div style="background: #999; padding: 20px"></div>
+      <div style="background: #999; padding: 20px"></div>
+      <div style="background: #999; padding: 20px"></div>
+      <div style="background: #999; padding: 20px"></div>
+      <div style="background: #999; padding: 20px"></div>
+    </div>
+  </body>
+</html>
