@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mario</title>
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
@@ -16,43 +17,41 @@
         margin: 0;
       }
       .game {
+        position: relative;
         background-color: #5c93fc;
         display: grid;
         width: max-content;
         image-rendering: pixelated;
         grid-template-columns: repeat(20, 16px);
         grid-template-rows: repeat(10, 16px);
+        zoom: 2;
       }
       .ground {
-        background-image: url("sprites/ground.png");
+        background-image: url("/images/sprites/ground.png");
         background-repeat: repeat;
       }
       .block {
-        background-image: url("sprites/block.png");
+        background-image: url("/images/sprites/block.png");
         background-repeat: repeat;
       }
       .brick {
-        background-image: url("sprites/brick.png");
+        background-image: url("/images/sprites/brick.png");
         background-repeat: repeat;
       }
       .question {
-        background-image: url("sprites/question.png");
+        background-image: url("/images/sprites/question.png");
         background-repeat: repeat;
       }
       .goomba {
-        background-image: url("sprites/goomba.png");
-        background-repeat: repeat;
+        background-image: url("/images/sprites/goomba.png");
       }
       .mario {
-        background-image: url("sprites/mario.png");
-        background-repeat: repeat;
+        background-image: url("/images/sprites/mario.png");
       }
 
       .ui {
-        box-sizing: border-box;
         position: absolute;
-        top: 0;
-        width: 320px;
+        width: 100%;
         font-size: 8px;
         padding: 8px;
         display: flex;
@@ -61,7 +60,7 @@
     </style>
   </head>
   <body>
-    <div class="level">
+    <div class="game">
       <div class="ground" style="grid-column: 1/-1; grid-row: 9/11"></div>
 
       <div class="brick" style="grid-column: 4; grid-row: 6"></div>
@@ -75,12 +74,12 @@
       <div class="goomba" style="grid-column: 10; grid-row: 8"></div>
 
       <div class="mario" style="grid-column: 2; grid-row: 8"></div>
-    </div>
 
-    <div class="ui">
-      <span>Mario</span>
-      <span>World 1-1</span>
-      <span>Time 300</span>
+      <section class="ui">
+        <span>Mario</span>
+        <span>World 1-1</span>
+        <span>Time 300</span>
+      </section>
     </div>
   </body>
 </html>
