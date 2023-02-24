@@ -8,43 +8,26 @@
 
   <body>
     <section
-      style="
-        padding: 8px;
-        border: 1px solid;
-        margin-bottom: 24px;
-        display: flex;
-        gap: 8px;
-        flex-direction: row;
-        flex-wrap: wrap;
-      "
+      class="box"
+      style="display: flex; gap: 8px; flex-direction: row; flex-wrap: wrap"
     >
-      <div style="background: #999; padding: 20px"></div>
-      <div style="background: #999; padding: 20px"></div>
-      <div style="background: #999; padding: 20px"></div>
-      <div style="background: #999; padding: 20px"></div>
-      <div style="background: #999; padding: 20px"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+
+    <section class="box" style="display: flex; gap: 8px">
+      <div class="box"></div>
+      <div class="box" style="flex-grow: 1"></div>
+      <div class="box"></div>
     </section>
 
     <section
-      style="
-        padding: 8px;
-        border: 1px solid;
-        margin-bottom: 24px;
-        display: flex;
-        gap: 8px;
-      "
-    >
-      <div style="background: #999; padding: 20px"></div>
-      <div style="flex: 1; background: #099; padding: 20px"></div>
-      <div style="background: #999; padding: 20px"></div>
-    </section>
-
-    <section
+      class="box"
       style="
         height: 200px;
-        padding: 8px;
-        border: 1px solid;
-        margin-bottom: 24px;
         display: flex;
         gap: 8px;
         flex-direction: row;
@@ -52,23 +35,15 @@
         align-items: center;
       "
     >
-      <div style="background: #999; padding: 20px"></div>
-      <div style="background: #999; padding: 20px"></div>
-      <div style="background: #999; padding: 20px"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
     </section>
 
-    <section
-      style="
-        padding: 8px;
-        border: 1px solid;
-        margin-bottom: 24px;
-        display: flex;
-        gap: 8px;
-      "
-    >
-      <div style="order: 3">one</div>
-      <div style="order: 2">two</div>
-      <div style="order: 1">three</div>
+    <section style="display: flex; gap: 8px">
+      <div class="box" style="order: 3">one</div>
+      <div class="box" style="order: 2">two</div>
+      <div class="box" style="order: 1">three</div>
     </section>
   </body>
 </html>
