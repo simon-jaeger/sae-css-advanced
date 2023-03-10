@@ -9,11 +9,7 @@
   <body>
     <section
       class="box"
-      style="
-        display: grid;
-        gap: 8px;
-        grid-template-columns: 1fr 1fr 1fr;
-      "
+      style="display: grid; gap: 8px; grid-template-columns: repeat(3, 1fr)"
     >
       <div class="box"></div>
       <div class="box"></div>
@@ -28,20 +24,11 @@
       style="
         display: grid;
         gap: 8px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       "
     >
       <div class="box"></div>
       <div class="box"></div>
-    </section>
-
-    <section
-      style="
-        display: grid;
-        gap: 8px;
-        grid-template-columns: repeat(4, 1fr);
-      "
-    >
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
