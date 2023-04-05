@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      :root {
+        --sidebar: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>calc()</h1>
+
+    <div class="box" style="width: 200px">200px</div>
+
+    <div class="box" style="width: calc(100px + 100px)">
+      calc(100px + 100px)
+    </div>
+
+    <div class="box" style="width: calc(300px - 100px)">
+      calc(300px - 100px)
+    </div>
+
+    <div class="box" style="width: calc(2 * 100px)">calc(2 * 100px)</div>
+
+    <div class="box" style="width: calc(400px / 2)">calc(400px / 2)</div>
+
+    <div class="box" style="width: calc(100vw - var(--sidebar))">
+      calc(100vw - var(--sidebar))
+    </div>
+
+    <aside
+      class="box"
+      style="
+        width: var(--sidebar);
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+      "
+    >
+      var(--sidebar)
+    </aside>
+  </body>
+</html>
