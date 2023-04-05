@@ -5,29 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/style.css" />
     <style>
-      .card {
-        container-type: inline-size;
-        container-name: card;
-        display: block;
-      }
-      @container card (min-width: 400px) {
-        .card {
-          display: grid;
-          grid-template-columns: repeat(2,1fr);
-        }
+      body {
+        margin: 0;
       }
 
-
-      .sidebar {
-        container-type: inline-size;
-        container-name: sidebar;
-        font-size: 16px;
-      }
-
-      @container sidebar (min-width: 400px) {
-        .sidebar {
-          font-size: 32px;
-        }
+      :root {
+        --sidebar: 200px;
       }
     </style>
   </head>
