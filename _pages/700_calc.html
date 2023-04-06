@@ -7,46 +7,55 @@
     <style>
       body {
         margin: 0;
+        min-height: 2000px;
       }
 
       :root {
-        --sidebar: 200px;
+        --someVar: 50px;
+        --scroll: 0;
       }
     </style>
+    <script>
+      window.addEventListener("scroll", () => {
+        document.documentElement.style.setProperty(
+          "--scroll",
+          String(window.scrollY)
+        )
+      })
+    </script>
   </head>
 
   <body>
     <h1>calc()</h1>
 
-    <div class="box" style="width: 200px">200px</div>
+    <div class="box" style="width: 300px">300px</div>
 
-    <div class="box" style="width: calc(100px + 100px)">
-      calc(100px + 100px)
+    <div class="box" style="width: calc(100px + 200px)">
+      calc(100px + 200px)
     </div>
 
-    <div class="box" style="width: calc(300px - 100px)">
-      calc(300px - 100px)
+    <div class="box" style="width: calc(400px - 100px)">
+      calc(400px - 100px)
     </div>
 
-    <div class="box" style="width: calc(2 * 100px)">calc(2 * 100px)</div>
+    <div class="box" style="width: calc(3 * 100px)">calc(3 * 100px)</div>
 
-    <div class="box" style="width: calc(400px / 2)">calc(400px / 2)</div>
+    <div class="box" style="width: calc(600px / 2)">calc(600px / 2)</div>
 
-    <div class="box" style="width: calc(100vw - var(--sidebar))">
-      calc(100vw - var(--sidebar))
+    <div class="box" style="width: calc(6 * var(--someVar))">
+      calc(6 * var(--someVar))
     </div>
 
-    <aside
+    <div
       class="box"
       style="
-        width: var(--sidebar);
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100vh;
+        transform: rotate(calc((var(--scroll) * 0.5deg)));
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
       "
-    >
-      var(--sidebar)
-    </aside>
+    ></div>
   </body>
 </html>
