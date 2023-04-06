@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .sidebar {
+        width: 240px;
+        height: 100vh;
+        padding: 16px 0;
+        background: #222;
+        border-right: 1px solid;
+        resize: horizontal;
+        overflow: auto;
+        container-type: inline-size;
+        container-name: sidebar;
+      }
+
+      .sidebar > a {
+        display: flex;
+        gap: 12px;
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .sidebar > a:hover {
+        background: #444;
+      }
+
+      @container sidebar (max-width: 200px) {
+        .sidebar > a > span:nth-child(2) {
+          display: none;
+        }
+        .sidebar > a > span:nth-child(1) {
+          font-size: 32px;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="display: flex">
+      <aside class="sidebar">
+        <a href="#">
+          <span>⭐</span>
+          <span>Favorite items</span>
+        </a>
+        <a href="#">
+          <span>🔥</span>
+          <span>Trending topics</span>
+        </a>
+        <a href="#">
+          <span>⚙️</span>
+          <span>User settings</span>
+        </a>
+      </aside>
+      <main style="flex: 1; height: 100vh; padding: 20px">
+        <p>
+          Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis,
+          sodales eu felis ut, efficitur eleifend ligula. Maecenas vehicula
+          volutpat tortor, vitae convallis felis molestie eu. Morbi tincidunt
+          tristique orci, et blandit nibh pulvinar quis. Fusce massa enim,
+          euismod at sapien eget, vestibulum consectetur sem. In sagittis eros
+          vel justo lobortis porta. Nulla hendrerit ornare massa, a convallis
+          purus iaculis vel. Proin vel purus sit amet est imperdiet varius. Sed
+          fringilla sed risus sit amet convallis. Nam non euismod mauris, vitae
+          mattis elit. Vestibulum diam nibh, lacinia non nisi pharetra, ornare
+          mattis felis. Nulla venenatis sem quis enim dignissim fringilla.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

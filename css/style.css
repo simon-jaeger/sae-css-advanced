@@ -5,6 +5,7 @@
 }
 
 body {
+  margin: 0;
   background: #000;
   color: #bbb;
   font-family: system-ui;
