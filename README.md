@@ -1,6 +1,6 @@
 # sae-css-advanced
 
-lektionen: 4 * 2 * 3h
+lektionen: 8 * 3h
 
 - [canvas](https://canvas.sae.edu/courses/14914)
 

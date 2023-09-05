@@ -11,15 +11,11 @@ body {
   font-family: system-ui;
 }
 
-body > *:not(:first-child) {
-  margin-top: 16px;
+body > * {
+  margin-bottom: 16px;
 }
 
 .box {
   padding: 16px;
   border: 1px solid;
-}
-
-li {
-  list-style-position: inside;
 }
