@@ -19,3 +19,23 @@ body > * {
   padding: 16px;
   border: 1px solid;
 }
+
+/* utility classes */
+/******************************************************************************/
+
+.flex {
+  display: flex;
+}
+
+.text-lg {
+  font-size: 24px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.px-4 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
