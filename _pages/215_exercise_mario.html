@@ -23,41 +23,37 @@
         display: flex;
         flex-direction: column;
       }
-      .flex {
+      .row {
         display: flex;
-      }
-      .ground {
-        background-image: url("/assets/sprites/ground.png");
-        width: 16px;
-        height: 16px;
-        background-repeat: repeat;
-      }
-      .block {
-        background-image: url("/assets/sprites/block.png");
-        width: 16px;
-        height: 16px;
-        background-repeat: repeat;
-      }
-      .goomba {
-        background-image: url("/assets/sprites/goomba.png");
-        width: 16px;
         height: 16px;
       }
       .mario {
         background-image: url("/assets/sprites/mario.png");
         width: 16px;
-        height: 16px;
+      }
+      .goomba {
+        background-image: url("/assets/sprites/goomba.png");
+        width: 16px;
+      }
+      .ground {
+        background-image: url("/assets/sprites/ground.png");
+        background-repeat: repeat;
+      }
+      .block {
+        background-image: url("/assets/sprites/block.png");
+        background-repeat: repeat;
       }
     </style>
   </head>
   <body>
     <div class="game">
       <div
-        class="flex"
+        class="row"
         style="
           font-size: 8px;
+          padding: 0 8px;
+          align-items:center;
           justify-content: space-between;
-          padding: 8px;
           margin-bottom: auto;
         "
       >
@@ -65,16 +61,15 @@
         <span>World 1-1</span>
         <span>Time 300</span>
       </div>
-      <div class="flex">
-        <div class="mario" style="margin: 0 16px"></div>
-        <div class="block" style=""></div>
-        <div class="goomba" style="margin: 0 16px"></div>
-        <div class="block" style="width: 48px"></div>
-        <div class="goomba" style="margin-left: auto"></div>
-        <div class="block" style=""></div>
+      <div class="row" style="justify-content: center; gap: 16px;">
+        <div class="mario"></div>
+        <div class="goomba"></div>
+        <div class="goomba"></div>
       </div>
-      <div class="flex">
-        <div class="ground" style="flex-grow: 1"></div>
+      <div class="row">
+        <div class="block" style="flex-grow: 3"></div>
+        <div class="ground" style="flex-grow: 12"></div>
+        <div class="block" style="flex-grow: 5"></div>
       </div>
     </div>
   </body>
