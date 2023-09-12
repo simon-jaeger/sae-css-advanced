@@ -9,22 +9,16 @@
 
   <body>
     <h1>grid</h1>
-    <div class="box" style="
-      display:grid;
+    <div class="box example" style="
+      display: grid;
       gap: 10px;
       grid-auto-flow: row;
-      grid-template-columns: 80px 80px 120px;
+      grid-template-columns: 80px 80px 80px 80px;
       grid-template-rows: 80px 80px 80px;
       /*grid-auto-rows: 200px;*/
     ">
-      <div class="box" style="
-        grid-column: span 1;
-        grid-row: span 1;
-      ">1</div>
-      <div class="box" style="
-        grid-column: 1/4;
-        grid-row: 2/3;
-      ">2</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
       <div class="box">3</div>
       <div class="box">4</div>
       <div class="box">5</div>
