@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      body {
+        background: #ddf;
+        color: #008;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+          color: #000;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #000;
+          color: #fff;
+        }
+      }
+
+      @media (orientation: portrait) {
+        body:before {
+          content: "please rotate device";
+          color: red;
+        }
+      }
+
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .rotate {
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: rotate;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0s !important;
+          animation-iteration-count: 0 !important;
+          transition-duration: 0s !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>media queries</h1>
+    <p>css that only runs when certain conditions are met.</p>
+    <div class="box rotate" style="width: min-content"></div>
+  </body>
+</html>
