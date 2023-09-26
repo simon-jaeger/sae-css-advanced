@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      :root {
+        --topBarHeight: 500px;
+
+        --gap: 10px;
+        --lgGap: calc(var(--gap)*2);
+        --smGap: calc(var(--gap)/2);
+      }
+    </style>
+    <script>
+      window.addEventListener("scroll", () => {
+        document.documentElement.style.setProperty(
+          "--scroll",
+          String(window.scrollY)
+        )
+      })
+    </script>
+  </head>
+
+  <body>
+    <h1>calc</h1>
+    <div class="box" style="width: 300px;">300px</div>
+    <div class="box" style="width: calc(100px + 200px);">width: calc(100px + 200px);</div>
+    <div class="box" style="width: calc(400px - 100px);">width: calc(400px - 100px);</div>
+    <div class="box" style="width: calc(3 * 100px);">width: calc(3 * 100px);</div>
+    <div class="box" style="width: calc(600px / 2);">width: calc(600px / 2);</div>
+
+    <div class="box" style="height: 9999px;"></div>
+
+    <div
+      class="box"
+      style="
+        transform: rotate(calc((var(--scroll) * 0.5deg)));
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      "
+    ></div>
+  </body>
+</html>
