@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <style>
+      .heading {
+        font-size: 2rem;
+      }
+
+      .list {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+      }
+
+      .tablet-upwards {
+        display: none;
+      }
+
+      .mobile-only {
+        display: block;
+      }
+
+      @media (min-width: 768px) {
+        .heading {
+          font-size: 4rem;
+        }
+
+        .list {
+          flex-direction: row;
+        }
+
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .tablet-upwards {
+          display: block;
+        }
+
+        .mobile-only {
+          display: none;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .heading {
+          font-size: 8rem;
+        }
+
+        .grid {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="heading">Breakpoints</h1>
+    <div class="box list">
+      <div class="box">a</div>
+      <div class="box">b</div>
+      <div class="box">c</div>
+    </div>
+    <div class="box grid">
+      <div class="box">a</div>
+      <div class="box">b</div>
+      <div class="box">c</div>
+      <div class="box">d</div>
+      <div class="box">e</div>
+      <div class="box">f</div>
+    </div>
+    <footer class="mobile-only">mobile footer</footer>
+    <footer class="tablet-upwards">tablet and larger footer</footer>
+  </body>
+</html>

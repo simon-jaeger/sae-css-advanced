@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+  </head>
+
+  <body>
+    <section
+      class="box"
+      style="
+        min-height: 400px;
+        display: flex;
+        gap: 8px;
+        flex-direction: row; /* row, column */
+        justify-content: start; /* start, end, center, space-between */
+        align-items: stretch; /* stretch, start, center, end */
+        flex-wrap: nowrap; /* nowrap, wrap */
+      "
+    >
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div
+        class="box"
+        style="
+          align-self: initial; /* initial, stretch, start, center, end */
+          margin-right: initial; /* initial, auto, 123px, ... */
+          flex-grow: initial; /* initial, 0, 1, 2, 3, ... */
+        "
+      >
+        3
+      </div>
+      <div class="box" style="flex-grow: initial">4</div>
+    </section>
+  </body>
+</html>

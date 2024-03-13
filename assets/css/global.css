@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  background: #000;
+  color: #ccc;
+  font-family: system-ui;
+}
+
+.box {
+  padding: 16px;
+  border: 1px solid;
+}

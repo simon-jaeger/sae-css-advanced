@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <style>
+      .gallery {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+
+      .gallery > img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="https://picsum.photos/200?random=1" alt="?">
+      <img src="https://picsum.photos/200/400?random=2" alt="?">
+      <img src="https://picsum.photos/200?random=3" alt="?">
+      <img src="https://picsum.photos/200/300?random=4" alt="?">
+      <img src="https://picsum.photos/200?random=5" alt="?">
+      <img src="https://picsum.photos/200/400?random=6" alt="?">
+      <img src="https://picsum.photos/200?random=7" alt="?">
+      <img src="https://picsum.photos/200?random=8" alt="?">
+      <img src="https://picsum.photos/200?random=9" alt="?">
+    </div>
+  </body>
+</html>
