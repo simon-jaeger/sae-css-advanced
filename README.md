@@ -11,7 +11,6 @@ advanced cascading stylesheets (8 * 3h)
 - aspect ratio
 - flexbox
 - R: https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
-- T: https://flexbox.tech/
 - T: nav (https://lookup.design/search?query=navigation)
 - T: mario
 - T: http://www.flexboxdefense.com
@@ -25,9 +24,26 @@ advanced cascading stylesheets (8 * 3h)
 - T: https://cssgridgarden.com/
 - ................................................................................
 - media queries
-- ...
-- ...
-- ...
+- breakpoints
+- container queries
+- ................................................................................
+- css custom properties (variables)
+- calc
+- text wrapping and overflow
+- ................................................................................
+- css architecture
+- components/namespacing
+- utility classes
+- ................................................................................
+- T: presentations about advanced topics like:
+- pseudos (:empty, :target, :not, :has, ...)
+- nesting
+- @supports
+- @layer
+- masking/clipping
+- filter
+- scrollbar styling
+- scroll snap
 
 ## weitere ressourcen
 
