@@ -22,7 +22,7 @@ advanced cascading stylesheets (8 * 3h)
 - T: calculator
 - T: pixel art
 - ........................................
-- grid:fluid
+- grid: fluid
 - T: image gallery
 - T: landing page (https://lookup.design/landing-pages)
 - T: https://cssgridgarden.com/
@@ -39,19 +39,19 @@ advanced cascading stylesheets (8 * 3h)
 - components/namespacing
 - utility classes
 - ........................................
-- T: presentations about advanced topics like:
+- T: presentations about new/advanced css features like:
 - pseudos (:empty, :target, :not, :has, ...)
-- nesting
 - @supports
 - @layer
 - masking/clipping
 - filter
 - scrollbar styling
 - scroll snap
+- ...
 
 ## weitere ressourcen
 
 - https://developer.mozilla.org/en-US/docs/Web/CSS
-- https://cssreference.io/
-- https://css-tricks.com/guides/
+- https://cssreference.io
+- https://css-tricks.com/guides
 - https://www.internetingishard.com
