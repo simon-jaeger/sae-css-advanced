@@ -22,7 +22,6 @@ advanced cascading stylesheets (8 * 3h)
 - T: calculator
 - grid: explicit
 - T: pixel art
-- R: 
 - ........................................
 - grid: fluid
 - T: image gallery
