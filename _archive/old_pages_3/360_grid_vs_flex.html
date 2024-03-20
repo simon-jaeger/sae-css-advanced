@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <style>
+      /* content adjust to layout --> grid */
+      .features {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 16px;
+
+        div {
+          padding: 16px;
+          border: 1px solid;
+        }
+      }
+
+      /* layout adjusts to content --> flexbox */
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        div {
+          padding: 4px 12px;
+          border: 1px solid;
+          border-radius: 9999px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="features">
+      <div>
+        <h2>alpha</h2>
+        <p>
+          Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis,
+          sodales eu felis ut, efficitur eleifend ligula.
+        </p>
+      </div>
+      <div>
+        <h2>bravo</h2>
+        <p>
+          Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis,
+          sodales eu felis ut, efficitur eleifend ligula.
+        </p>
+      </div>
+      <div>
+        <h2>charlie</h2>
+        <p>
+          Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis,
+          sodales eu felis ut, efficitur eleifend ligula.
+        </p>
+      </div>
+    </section>
+
+    <section class="tags">
+      <div>short</div>
+      <div>multiple words</div>
+      <div>whatever</div>
+      <div>foo</div>
+      <div>bar</div>
+      <div>lorem ipsum</div>
+      <div>dolor sit amet</div>
+      <div>baz</div>
+      <div>qux</div>
+      <div>multiple words</div>
+      <div>short</div>
+      <div>foo</div>
+      <div>baz</div>
+      <div>whatever</div>
+      <div>bar</div>
+      <div>dolor sit amet</div>
+      <div>lorem ipsum</div>
+      <div>qux</div>
+    </section>
+  </body>
+</html>
