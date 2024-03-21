@@ -12,17 +12,25 @@
       .discord {
         height: 100vh;
         display: grid;
-        grid-template-columns: 40px 120px 1fr 120px;
-        grid-template-rows: 40px 1fr;
+        grid-template-columns: 80px 120px 1fr 120px;
+        grid-template-rows: 40px 1fr 40px;
+
+        &>* {
+          padding: 8px;
+        }
       }
 
       .servers {
-        grid-row: span 2;
+        grid-row: span 3;
         background: #1e1f22;
       }
 
+      .settings {
+        background: #2b2d31;
+        border-bottom: 1px solid black;
+      }
+
       .channels {
-        grid-row: span 2;
         background: #2b2d31;
       }
 
@@ -30,7 +38,6 @@
         grid-column: span 2;
         background: #313338;
         border-bottom: 1px solid black;
-        padding: 0 16px;
 
         display: flex;
         gap: 8px;
@@ -41,29 +48,42 @@
         }
       }
 
-      .messages {
+      .feed {
         background: #313338;
-        padding: 0 16px;
         overflow-y: auto;
       }
 
       .users {
+        grid-row: span 2;
         background: #2b2d31;
+      }
+
+      .account {
+        background: #232428;
+      }
+
+      .message {
+        background: #383a40;
+
+        input {
+          width: 100%;
+        }
       }
     </style>
   </head>
 
   <body>
     <div class="discord">
-      <aside class="servers"></aside>
-      <aside class="channels"></aside>
+      <aside class="servers">servers</aside>
+      <div class="settings">settings</div>
       <header class="topbar">
         <h4>#example</h4>
         <span>A</span>
         <span>B</span>
         <span>C</span>
       </header>
-      <main class="messages">
+      <aside class="channels">channels</aside>
+      <main class="feed">
         <h2>Welcome to #example</h2>
         <p>This is the start of the #example channel.</p>
         <p>Lorem ipsum dolor sit amet.</p>
@@ -72,13 +92,12 @@
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
       </main>
-      <aside class="users"></aside>
+      <aside class="users">users</aside>
+      <footer class="account">account</footer>
+      <footer class="message">
+        <input aria-label="msg" placeholder="message">
+      </footer>
     </div>
   </body>
 </html>

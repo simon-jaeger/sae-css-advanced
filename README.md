@@ -25,8 +25,8 @@ advanced cascading stylesheets (8 * 3h)
 - ........................................
 - grid: fluid
 - T: https://cssgridgarden.com/
-- grid: auto
 - T: layout (discord)
+- ........................................
 - grid: auto
 - T: image gallery
 - grid vs flexbox
