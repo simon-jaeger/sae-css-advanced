@@ -24,10 +24,13 @@ advanced cascading stylesheets (8 * 3h)
 - T: pixel art
 - ........................................
 - grid: fluid
+- T: https://cssgridgarden.com/
+- grid: auto
+- T: layout (discord)
+- grid: auto
 - T: image gallery
 - grid vs flexbox
 - T: landing page (https://lookup.design/landing-pages)
-- T: https://cssgridgarden.com/
 - ........................................
 - media queries
 - breakpoints

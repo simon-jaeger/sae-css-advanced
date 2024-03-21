@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .discord {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 40px 120px 1fr 120px;
+        grid-template-rows: 40px 1fr;
+      }
+
+      .servers {
+        grid-row: span 2;
+        background: #1e1f22;
+      }
+
+      .channels {
+        grid-row: span 2;
+        background: #2b2d31;
+      }
+
+      .topbar {
+        grid-column: span 2;
+        background: #313338;
+        border-bottom: 1px solid black;
+        padding: 0 16px;
+
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        h4 {
+          margin-right: auto;
+        }
+      }
+
+      .messages {
+        background: #313338;
+        padding: 0 16px;
+        overflow-y: auto;
+      }
+
+      .users {
+        background: #2b2d31;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="discord">
+      <aside class="servers"></aside>
+      <aside class="channels"></aside>
+      <header class="topbar">
+        <h4>#example</h4>
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+      </header>
+      <main class="messages">
+        <h2>Welcome to #example</h2>
+        <p>This is the start of the #example channel.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </main>
+      <aside class="users"></aside>
+    </div>
+  </body>
+</html>

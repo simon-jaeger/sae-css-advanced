@@ -5,25 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/assets/css/global.css" />
     <style>
-      section {
-        display: grid;
-        gap: 8px;
-        grid-template-columns: 80px 80px 80px;
-        grid-template-rows: 80px 80px 80px;
-        grid-auto-rows: 80px;
-      }
-
       div {
         padding: 16px;
         border: 1px solid;
       }
 
-      div:nth-child(1) {
-        grid-column: span 3;
-      }
-
-      div:nth-child(2) {
-        grid-row: span 2;
+      section {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
       }
     </style>
   </head>
@@ -39,6 +29,21 @@
       <div>7</div>
       <div>8</div>
       <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+      <div>21</div>
+      <div>22</div>
+      <div>23</div>
+      <div>24</div>
     </section>
   </body>
 </html>
