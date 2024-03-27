@@ -14,10 +14,11 @@
         display: grid;
         grid-template-columns: 80px 120px 1fr 120px;
         grid-template-rows: 40px 1fr 40px;
+      }
 
-        &>* {
-          padding: 8px;
-        }
+      .discord > * {
+        padding: 8px;
+        /*border: 1px solid orange;*/
       }
 
       .servers {
@@ -42,10 +43,7 @@
         display: flex;
         gap: 8px;
         align-items: center;
-
-        h4 {
-          margin-right: auto;
-        }
+        justify-content: space-between;
       }
 
       .feed {
@@ -64,25 +62,19 @@
 
       .message {
         background: #383a40;
-
-        input {
-          width: 100%;
-        }
       }
     </style>
   </head>
 
   <body>
-    <div class="discord">
-      <aside class="servers">servers</aside>
+    <section class="discord">
+      <div class="servers">servers</div>
       <div class="settings">settings</div>
-      <header class="topbar">
+      <div class="topbar">
         <h4>#example</h4>
-        <span>A</span>
-        <span>B</span>
-        <span>C</span>
-      </header>
-      <aside class="channels">channels</aside>
+        <span>icons</span>
+      </div>
+      <div class="channels">channels</div>
       <main class="feed">
         <h2>Welcome to #example</h2>
         <p>This is the start of the #example channel.</p>
@@ -93,11 +85,11 @@
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </main>
-      <aside class="users">users</aside>
-      <footer class="account">account</footer>
-      <footer class="message">
-        <input aria-label="msg" placeholder="message">
-      </footer>
-    </div>
+      <div class="users">users</div>
+      <div class="account">account</div>
+      <div class="message">
+        <input aria-label="msg" placeholder="message" />
+      </div>
+    </section>
   </body>
 </html>

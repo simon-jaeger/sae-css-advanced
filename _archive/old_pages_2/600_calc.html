@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/assets/css/global.css" />
     <style>
-      :root {
-        --topBarHeight: 500px;
+      div {
+        padding: 16px;
+        border: 1px solid;
+        margin-bottom: 16px;
+      }
 
+      :root {
         --gap: 10px;
         --lgGap: calc(var(--gap)*2);
         --smGap: calc(var(--gap)/2);
@@ -25,16 +29,15 @@
 
   <body>
     <h1>calc</h1>
-    <div class="box" style="width: 300px;">300px</div>
-    <div class="box" style="width: calc(100px + 200px);">width: calc(100px + 200px);</div>
-    <div class="box" style="width: calc(400px - 100px);">width: calc(400px - 100px);</div>
-    <div class="box" style="width: calc(3 * 100px);">width: calc(3 * 100px);</div>
-    <div class="box" style="width: calc(600px / 2);">width: calc(600px / 2);</div>
+    <div style="width: 300px;">300px</div>
+    <div style="width: calc(100px + 200px);">width: calc(100px + 200px);</div>
+    <div style="width: calc(400px - 100px);">width: calc(400px - 100px);</div>
+    <div style="width: calc(3 * 100px);">width: calc(3 * 100px);</div>
+    <div style="width: calc(600px / 2);">width: calc(600px / 2);</div>
 
-    <div class="box" style="height: 9999px;"></div>
+    <div style="height: 9999px;"></div>
 
     <div
-      class="box"
       style="
         transform: rotate(calc((var(--scroll) * 0.5deg)));
         width: 40px;

@@ -9,9 +9,13 @@
         margin: 0;
       }
 
+      .page {
+        display: flex;
+        height: 100vh;
+      }
+
       .sidebar {
         width: 240px;
-        height: 100vh;
         background: #222;
         border-right: 1px solid;
         resize: horizontal;
@@ -26,9 +30,7 @@
         gap: 12px;
         color: white;
         text-decoration: none;
-        padding: 8px 16px;
-        font-size: 18px;
-        font-weight: 500;
+        padding: 12px;
       }
 
       .sidebar > a:hover {
@@ -48,7 +50,7 @@
   </head>
 
   <body>
-    <div style="display: flex">
+    <section class="page">
       <aside class="sidebar">
         <a href="#">
           <span>⭐</span>
@@ -75,6 +77,6 @@
         Vestibulum diam nibh, lacinia non nisi pharetra, ornare mattis felis.
         Nulla venenatis sem quis enim dignissim fringilla.
       </main>
-    </div>
+    </section>
   </body>
 </html>
