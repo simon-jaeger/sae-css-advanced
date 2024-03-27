@@ -12,13 +12,12 @@
       .discord {
         height: 100vh;
         display: grid;
-        grid-template-columns: 80px 120px 1fr 120px;
+        grid-template-columns: 80px 120px 1fr 160px;
         grid-template-rows: 40px 1fr 40px;
       }
 
       .discord > * {
         padding: 8px;
-        /*border: 1px solid orange;*/
       }
 
       .servers {
@@ -31,9 +30,6 @@
         border-bottom: 1px solid black;
       }
 
-      .channels {
-        background: #2b2d31;
-      }
 
       .topbar {
         grid-column: span 2;
@@ -46,6 +42,10 @@
         justify-content: space-between;
       }
 
+      .channels {
+        background: #2b2d31;
+      }
+
       .feed {
         background: #313338;
         overflow-y: auto;
@@ -54,6 +54,25 @@
       .users {
         grid-row: span 2;
         background: #2b2d31;
+
+        article {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          margin-bottom: 16px;
+
+          .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background: white;
+          }
+
+          .name {
+            color: orange;
+            flex-grow: 1;
+          }
+        }
       }
 
       .account {
@@ -85,10 +104,20 @@
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </main>
-      <div class="users">users</div>
+      <div class="users">
+        <article>
+          <div class="avatar"></div>
+          <div class="name">john doe</div>
+        </article>
+        <article>
+          <div class="avatar"></div>
+          <div class="name">mary sue</div>
+        </article>
+      </div>
       <div class="account">account</div>
       <div class="message">
-        <input aria-label="msg" placeholder="message" />
+        messages
+<!--        <input aria-label="msg" placeholder="message" />-->
       </div>
     </section>
   </body>
