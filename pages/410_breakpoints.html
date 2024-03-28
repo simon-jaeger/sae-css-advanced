@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/assets/css/global.css"/>
+  <style>
+    .heading {
+      font-size: 2rem;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        padding: 16px;
+        border: 1px solid;
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      div {
+        padding: 16px;
+        border: 1px solid;
+      }
+    }
+
+    /* tablets */
+    @media (min-width: 768px) {
+      .heading {
+        font-size: 4rem;
+      }
+
+      .flex {
+        flex-direction: row;
+      }
+
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* desktops */
+    @media (min-width: 1280px) {
+      .heading {
+        font-size: 8rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="heading">Breakpoints</h1>
+  <div class="grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+<!--  <div class="flex">-->
+<!--    <div>1</div>-->
+<!--    <div>2</div>-->
+<!--    <div>3</div>-->
+<!--    <div>4</div>-->
+<!--    <div>5</div>-->
+<!--    <div>6</div>-->
+<!--    <div>7</div>-->
+<!--    <div>8</div>-->
+<!--  </div>-->
+</body>
+</html>
