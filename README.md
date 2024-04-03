@@ -48,7 +48,8 @@ advanced cascading stylesheets (8 * 3h)
 - filter
 - scrollbar styling
 - scroll snap
-- ...
+- ........................................
+- T: work on your website
 
 ## further reading
 

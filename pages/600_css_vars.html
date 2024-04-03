@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <style>
+      :root {
+        /* global vars */
+        --audio: #3777bc;
+        --game: #ee2737;
+        --web: #753bbd;
+      }
+
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+
+        /* local var */
+        --size: 40px;
+        width: var(--size);
+        height: var(--size);
+        border-radius: var(--size);
+        font-size: calc(var(--size) / 2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>SAE - Creative Media Education</h1>
+
+    <h2 style="background: var(--audio)">Audio</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h2 style="background: var(--game)">Game</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h2 style="background: var(--web)">Web</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <section style="display: flex; gap: 8px">
+      <div class="circle" style="background: var(--audio)">A</div>
+      <div class="circle" style="background: var(--game)">G</div>
+      <div class="circle" style="background: var(--web)">W</div>
+    </section>
+  </body>
+</html>
