@@ -1,10 +1,12 @@
 {
-  "prettier": {
-    "semi": false,
-    "vueIndentScriptAndStyle": true,
-    "htmlWhitespaceSensitivity": "ignore"
-  },
   "devDependencies": {
-    "prettier": "3.2.5"
+    "prettier": "3.2.5",
+    "browser-sync": "3.0.2"
+  },
+  "scripts": {
+    "serve": "browser-sync start --server --directory --no-notify --watch --port 4000"
+  },
+  "prettier": {
+    "htmlWhitespaceSensitivity": "ignore"
   }
 }
