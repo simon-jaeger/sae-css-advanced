@@ -9,6 +9,9 @@
 - template
 - sizing
 - aspect ratio
+- R: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#numbers_lengths_and_percentages
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
 --------------------------------------------------------------------------------
 - flexbox
 - R: https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
@@ -24,6 +27,7 @@
 - T: pixel art
 --------------------------------------------------------------------------------
 - grid: fluid
+- R: https://mozilladevelopers.github.io/playground/css-grid
 - T: https://cssgridgarden.com/
 - T: layout (discord)
 --------------------------------------------------------------------------------
@@ -35,10 +39,16 @@
 - media queries
 - breakpoints
 - container queries
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
 --------------------------------------------------------------------------------
 - css custom properties (variables)
 - calc
 - text wrap and overflow
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
 --------------------------------------------------------------------------------
 - T: presentations/handouts about new/advanced css features like:
 - pseudos (:empty, :target, :not, :has, ...)
