@@ -14,9 +14,10 @@
 - R: https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
 --------------------------------------------------------------------------------
 - flexbox
-- R: https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
-- W: https://www.youtube.com/watch?v=K74l26pE4YA (flexbox in 100s)
+- R: https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png
 - T: http://www.flexboxdefense.com
+- W: https://www.youtube.com/watch?v=K74l26pE4YA (flexbox in 100s)
+- R: https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 - T: https://lookup.design/search?query=navigation
 - T: mario level
 --------------------------------------------------------------------------------
