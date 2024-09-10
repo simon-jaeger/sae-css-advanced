@@ -1,7 +1,7 @@
 # css advanced
 
 - duration: 8 * 3h
-- canvas: https://canvas.sae.edu/courses/14914
+- canvas: https://canvas.sae.edu/courses/18789
 
 ## outline
 
