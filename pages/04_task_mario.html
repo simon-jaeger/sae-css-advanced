@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .game {
+        width: 512px;
+        height: 320px;
+        background-color: #5c93fc;
+        color: white;
+        font-family: "Press Start 2P", monospace;
+        image-rendering: pixelated;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hud {
+        height: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .blocks {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 32px;
+        margin-right: 32px;
+      }
+
+      .chars {
+        display: flex;
+        gap: 32px;
+        margin-left: 32px;
+      }
+
+      .floor {
+        height: 32px;
+        background-image: url(/assets/images/ground.png);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="game">
+      <div class="hud">
+        <span>Mario</span>
+        <span>World 1-1</span>
+        <span>Time 300</span>
+      </div>
+      <div class="blocks">
+        <img src="/assets/images/brick.png" alt="" />
+        <img src="/assets/images/question.png" alt="" />
+        <img src="/assets/images/brick.png" alt="" />
+        <img src="/assets/images/question.png" alt="" />
+        <img src="/assets/images/brick.png" alt="" />
+      </div>
+      <div class="chars">
+        <img src="/assets/images/mario.png" alt="" />
+        <img src="/assets/images/goomba.png" alt="" />
+        <img src="/assets/images/goomba.png" alt="" />
+        <img src="/assets/images/goomba.png" alt="" />
+      </div>
+      <div class="floor"></div>
+    </div>
+  </body>
+</html>
