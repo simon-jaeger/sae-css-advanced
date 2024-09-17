@@ -28,13 +28,13 @@
 - T: pixel art
 --------------------------------------------------------------------------------
 - grid: fluid
-- R: https://mozilladevelopers.github.io/playground/css-grid
 - T: https://cssgridgarden.com/
 - T: layout (discord)
 --------------------------------------------------------------------------------
 - grid: auto
 - T: image gallery
 - grid vs flexbox
+- R: https://mozilladevelopers.github.io/playground/css-grid
 - T: https://lookup.design/landing-pages
 --------------------------------------------------------------------------------
 - media queries

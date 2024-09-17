@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .discord {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 80px 120px 1fr 160px;
+        grid-template-rows: 40px 1fr 40px;
+      }
+
+      .discord > * {
+        padding: 8px;
+      }
+
+      .servers {
+        grid-row: span 3;
+        background: #1e1f22;
+      }
+
+      .settings {
+        background: #2b2d31;
+        border-bottom: 1px solid black;
+      }
+
+      .topbar {
+        grid-column: span 2;
+        background: #313338;
+        border-bottom: 1px solid black;
+
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .channels {
+        background: #2b2d31;
+      }
+
+      .feed {
+        background: #313338;
+        overflow-y: auto;
+        scrollbar-gutter: stable;
+      }
+
+      .users {
+        grid-row: span 2;
+        background: #2b2d31;
+        overflow-y: auto;
+
+        article {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          margin-bottom: 16px;
+
+          .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background: white;
+          }
+
+          .name {
+            color: orange;
+            flex-grow: 1;
+          }
+        }
+      }
+
+      .account {
+        background: #232428;
+      }
+
+      .message {
+        background: #383a40;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="discord">
+      <div class="servers">servers</div>
+      <div class="settings">settings</div>
+      <div class="topbar">
+        <h4>#example</h4>
+        <span>icons</span>
+      </div>
+      <div class="channels">channels</div>
+      <main class="feed">
+        <h2>Welcome to #example</h2>
+        <p>This is the start of the #example channel.</p>
+        <p>
+          lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam nec
+          pharetra tortor. aliquam et nisi eros. vestibulum aliquet metus et dui
+          aliquet dictum. phasellus molestie ac nunc nec luctus. in scelerisque
+          risus vel diam molestie, eget consequat enim commodo.
+        </p>
+        <p>
+          lorem ipsum dolor sit amet, consectetur adipiscing elit. etiam nec
+          pharetra tortor. aliquam et nisi eros. vestibulum aliquet metus et dui
+          aliquet dictum. phasellus molestie ac nunc nec luctus. in scelerisque
+          risus vel diam molestie, eget consequat enim commodo.
+        </p>
+      </main>
+      <div class="users">
+        <article>
+          <div class="avatar"></div>
+          <div class="name">john doe</div>
+        </article>
+        <article>
+          <div class="avatar"></div>
+          <div class="name">mary sue</div>
+        </article>
+      </div>
+      <div class="account">account</div>
+      <div class="message">
+        messages
+      </div>
+    </section>
+  </body>
+</html>
