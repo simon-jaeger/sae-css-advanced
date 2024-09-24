@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      nav {
+        height: 48px;
+        padding: 0 16px;
+        background: #222;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      #links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        padding: 16px;
+        background: #444;
+      }
+
+      .open > #links {
+        display: flex;
+      }
+
+      #burger:before {
+        content:'='
+      }
+
+      .open > #burger:before {
+        content:'x'
+      }
+
+      @media (width >= 768px) {
+        #links {
+          position: static;
+          flex-direction: row;
+          gap: 8px;
+          background: none;
+        }
+
+        #burger {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav id="nav">
+      <div>LOGO</div>
+      <button id="burger"></button>
+      <div id="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">team</a>
+        <a href="#">contact</a>
+      </div>
+    </nav>
+
+    <script>
+      const burger = document.getElementById("burger")
+      const links = document.getElementById("links")
+      const nav = document.getElementById("nav")
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("open")
+      })
+    </script>
+  </body>
+</html>
