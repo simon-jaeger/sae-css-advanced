@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .features {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+
+        article {
+          border: 1px solid;
+          padding: 8px;
+        }
+      }
+
+      @media (width < 768px) {
+        .features {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .team {
+        display: grid;
+        gap: 16px;
+        padding: 16px;
+        grid-template-columns: repeat(2, 1fr);
+
+        article {
+          background: #222;
+          padding: 16px;
+        }
+      }
+
+      @media (width < 768px) {
+        .team {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="features">
+      <article>
+        <img
+          src="https://placehold.co/800x200"
+          alt="example"
+        />
+        <h2>alpha</h2>
+        <p>lorem</p>
+      </article>
+      <article>
+        <img
+          src="https://placehold.co/800x200"
+          alt="example"
+        />
+        <h2>bravo</h2>
+        <p>ipsum</p>
+      </article>
+      <article>
+        <img
+          src="https://placehold.co/800x200"
+          alt="example"
+        />
+        <h2>charlie</h2>
+        <p>dolor</p>
+      </article>
+    </section>
+
+    <section class="team">
+      <article>
+        <h2>john doe</h2>
+        <p>programming</p>
+      </article>
+      <article>
+        <h2>mary sue</h2>
+        <p>design</p>
+      </article>
+    </section>
+  </body>
+</html>
