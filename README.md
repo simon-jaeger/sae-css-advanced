@@ -39,5 +39,12 @@
 --------------------------------------------------------------------------------
 - media queries
 - breakpoints
-- container queries
 - R: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+--------------------------------------------------------------------------------
+- burger menu
+- page layout
+- T: work on your websites
+--------------------------------------------------------------------------------
+- extra topics:
+- container queries
+- css vars
