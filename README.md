@@ -5,6 +5,7 @@
 
 day 1
 --------------------------------------------------------------------------------
+
 - T: introductions
 - project template
 - global, page and inline css
@@ -12,10 +13,20 @@ day 1
 - box model
 - images
 - position
-- T: simple website layout
-- R: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+- T: build a simple website layout
 - R: https://internetingishard.netlify.app/html-and-css/
 
 day 2
 --------------------------------------------------------------------------------
+
 - scroll anchors
+- flexbox
+- T: mario level
+- R: https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
+
+day 3
+--------------------------------------------------------------------------------
+
+- flexbox review
+- T: http://www.flexboxdefense.com
+- T: build a navigation with flexbox (https://lookup.design/search?query=navigation)
