@@ -15,3 +15,7 @@ day 1
 - T: simple website layout
 - R: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 - R: https://internetingishard.netlify.app/html-and-css/
+
+day 2
+--------------------------------------------------------------------------------
+- scroll anchors

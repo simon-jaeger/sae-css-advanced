@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/global.css" />
+  <style>
+    div {
+      padding: 16px;
+      border: 1px solid;
+    }
+
+    section {
+      border: 1px solid;
+      padding: 16px;
+      height: 400px;
+      display: flex;
+      gap: 8px;
+      flex-direction: row; /* row, column */ /* sets main axis */
+      justify-content: start; /* start, end, center, space-between */ /* main axis */
+      align-items: start; /* stretch, start, center, end */ /* cross axis */
+      flex-wrap: nowrap; /* nowrap, wrap */
+      align-content: start; /* start, end, center, space-between */ /* lines when wrap */
+    }
+
+    div:nth-child(2) {
+      align-self: end;
+      flex-basis: 100px; /* alias for width (if row) or height (if column) */
+    }
+
+    div:nth-child(3) {
+      flex-grow: 1; /* initial, 0, 1, 2, 3, ... */
+      /*margin-right: auto; !* push following siblings away *!*/
+    }
+
+    div:nth-child(4) {
+      /*flex-grow: 1; !* initial, 0, 1, 2, 3, ... *!*/
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </section>
+</body>
+</html>
