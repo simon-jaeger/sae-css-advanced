@@ -31,4 +31,44 @@ day 3
 - W: https://www.youtube.com/watch?v=K74l26pE4YA (flexbox in 100s)
 - R: https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png
 - T: build a navigation with flexbox (https://lookup.design/search?query=navigation)
+- T: show the class how you did it
+- oklch colors
+- R: https://jakub.kr/components/oklch-colors
+- T: color palette
 - T: http://www.flexboxdefense.com
+
+day 4
+--------------------------------------------------------------------------------
+- grid: static
+- T: calculator
+- grid: explicit
+- T: tetris
+ 
+day 5
+--------------------------------------------------------------------------------
+- grid: fluid
+- T: https://cssgridgarden.com/
+- grid: page
+- T: https://lookup.design/landing-pages
+
+day 6
+--------------------------------------------------------------------------------
+- R: https://www.joshwcomeau.com/css/interactive-guide-to-grid/
+- grid: auto
+- T: image gallery
+- grid vs flexbox
+- T: layout (discord)
+
+day 7
+--------------------------------------------------------------------------------
+- media queries
+- breakpoints
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+- T: recreate the breakpoints of an existing website
+
+day 8
+--------------------------------------------------------------------------------
+- container queries
+- css vars
+- burger menu
+- T: work on your website
