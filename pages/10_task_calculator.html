@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <style>
+      main {
+        display: grid;
+        gap: 4px;
+        grid-template-columns: 80px 80px 80px 80px;
+        grid-template-rows: 80px 80px 80px 80px 80px 80px;
+      }
+
+      input {
+        grid-column: span 4;
+        font-size: 32px;
+        text-align: right;
+        padding: 16px;
+      }
+
+      button {
+        background: #444;
+        color: #ccc;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <input aria-label="display" placeholder="0" />
+
+      <button style="grid-column: span 2; background: #333">C</button>
+      <button style="background: #333">*</button>
+      <button style="background: #333">/</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button style="background: #333">-</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button style="background: #333">+</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button style="grid-row: span 2; background: #b60">=</button>
+
+      <button style="grid-column: span 2">0</button>
+      <button>.</button>
+    </main>
+
+    <script>
+      const input = document.querySelector("input")
+      const buttons = document.querySelectorAll("button")
+
+      for (const b of buttons) {
+        b.addEventListener("click", () => {
+          if (b.textContent === "=") input.value = eval(input.value)
+          else if (b.textContent === "C") input.value = ""
+          else input.value += b.textContent
+        })
+      }
+    </script>
+  </body>
+</html>

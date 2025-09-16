@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/assets/global.css"/>
+  <style>
+    section {
+      border: 1px solid;
+      padding: 8px;
+      display: grid;
+      width: max-content;
+      gap: 8px;
+      grid-template-columns: 80px 80px 80px;
+      grid-template-rows: 80px 80px 80px;
+    }
+
+    div {
+      padding: 16px;
+      border: 1px solid;
+      mix-blend-mode: screen;
+    }
+
+    .red {
+      background: #800;
+      grid-column: 1/4;
+      grid-row: 2/3;
+    }
+
+    .green {
+      background: #080;
+      grid-column: 2/3;
+      grid-row: 1/4;
+    }
+
+    .blue {
+      background: #008;
+      grid-column: 1/3;
+      grid-row: 2/4;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+  </section>
+</body>
+</html>

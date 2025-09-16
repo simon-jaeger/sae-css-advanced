@@ -43,6 +43,8 @@ day 4
 - T: calculator
 - grid: explicit
 - T: tetris
+- grid: repeat()
+- T: pixel art
  
 day 5
 --------------------------------------------------------------------------------
