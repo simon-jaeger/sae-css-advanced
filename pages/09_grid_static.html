@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/global.css" />
+  <style>
+    section {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: 80px 80px 80px 80px;
+      grid-template-rows: 80px 80px 80px;
+      grid-auto-rows: 200px;
+    }
+
+    div {
+      padding: 16px;
+      border: 1px solid;
+    }
+
+    div:nth-child(8) {
+      grid-row: span 2;
+    }
+
+    div:nth-child(9) {
+      grid-column: span 3;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </section>
+</body>
+</html>
