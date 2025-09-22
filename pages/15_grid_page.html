@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/assets/global.css"/>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .page {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 80px 1fr 80px;
+    }
+
+    header {
+      grid-column: span 2;
+      border-bottom: 4px solid;
+    }
+
+    aside {
+      grid-row: span 2;
+      border-right: 4px solid;
+    }
+
+    main {
+      padding: 16px;
+      overflow-y: auto;
+    }
+
+    footer {
+      border-top: 4px solid;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>header</header>
+    <aside>sidebar</aside>
+    <main>
+      <h2>content</h2>
+      <p>
+        Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis,
+        sodales eu felis ut, efficitur eleifend ligula. Maecenas vehicula
+        volutpat tortor, vitae convallis felis molestie eu. Morbi tincidunt
+        tristique orci, et blandit nibh pulvinar quis. Fusce massa enim,
+        euismod at sapien eget, vestibulum consectetur sem. In sagittis eros
+        vel justo lobortis porta. Nulla hendrerit ornare massa, a convallis
+        purus iaculis vel. Proin vel purus sit amet est imperdiet varius. Sed
+        fringilla sed risus sit amet convallis. Nam non euismod mauris, vitae
+        mattis elit. Vestibulum diam nibh, lacinia non nisi pharetra, ornare
+        mattis felis. Nulla venenatis sem quis enim dignissim fringilla.
+      </p>
+      <p>
+        Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis,
+        sodales eu felis ut, efficitur eleifend ligula. Maecenas vehicula
+        volutpat tortor, vitae convallis felis molestie eu. Morbi tincidunt
+        tristique orci, et blandit nibh pulvinar quis. Fusce massa enim,
+        euismod at sapien eget, vestibulum consectetur sem. In sagittis eros
+        vel justo lobortis porta. Nulla hendrerit ornare massa, a convallis
+        purus iaculis vel. Proin vel purus sit amet est imperdiet varius. Sed
+        fringilla sed risus sit amet convallis. Nam non euismod mauris, vitae
+        mattis elit. Vestibulum diam nibh, lacinia non nisi pharetra, ornare
+        mattis felis. Nulla venenatis sem quis enim dignissim fringilla.
+      </p>
+    </main>
+    <footer>footer</footer>
+  </div>
+</body>
+</html>
