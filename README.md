@@ -51,14 +51,14 @@ day 5
 - grid: fluid
 - T: https://cssgridgarden.com/
 - grid: page
-- T: https://lookup.design/landing-pages
+- T: build a landing page (https://lookup.design/landing-pages)
 
 day 6
 --------------------------------------------------------------------------------
-- R: https://www.joshwcomeau.com/css/interactive-guide-to-grid/
+- T: presentations and discussions about the landing pages
 - grid: auto
 - T: image gallery
-- grid vs flexbox
+- R: https://www.joshwcomeau.com/css/interactive-guide-to-grid/
 - T: layout (discord)
 
 day 7
