@@ -59,18 +59,18 @@ day 6
 - grid: auto
 - T: image gallery
 - R: https://www.joshwcomeau.com/css/interactive-guide-to-grid/
-- T: layout (discord)
+- media queries: basics
+- R: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+- T: prepare advanced topic presentations
 
 day 7
 --------------------------------------------------------------------------------
-- media queries
-- breakpoints
-- R: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+- T: advanced topic presentations
+- media queries: breakpoints 
+- container queries
 - T: recreate the breakpoints of an existing website
 
 day 8
 --------------------------------------------------------------------------------
-- container queries
-- css vars
 - burger menu
 - T: work on your website
