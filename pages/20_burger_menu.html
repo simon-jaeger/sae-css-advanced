@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/assets/global.css"/>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .nav {
+      height: 48px;
+      padding: 0 16px;
+      background: #222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .links {
+      display: flex;
+      gap: 8px;
+    }
+
+    .burger {
+      display: none;
+    }
+
+    /* mobile nav */
+    @media (width < 400px) {
+      .burger {
+        display: block;
+      }
+
+      .links {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        padding: 16px;
+        background: #444;
+      }
+
+      /* js toggles .is-open class */
+      .nav.is-open > .links {
+        visibility: visible;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div>LOGO</div>
+    <button class="burger">=</button>
+    <div class="links">
+      <a href="#">home</a>
+      <a href="#">about</a>
+      <a href="#">team</a>
+      <a href="#">contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+  </main>
+
+  <script>
+    const burger = document.querySelector(".burger")
+    const nav = document.querySelector(".nav")
+
+    burger.addEventListener("click", function () {
+      nav.classList.toggle("is-open")
+    })
+  </script>
+</body>
+</html>
