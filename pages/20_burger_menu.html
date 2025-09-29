@@ -14,6 +14,7 @@
       padding: 0 16px;
       background: #222;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       position: sticky;
@@ -34,29 +35,27 @@
       display: none;
     }
 
-    /* mobile nav */
-    @media (width <= 500px) {
+    @media (width < 400px) {
       .burger {
         display: block;
       }
 
       .links {
         visibility: hidden;
-        display: flex;
         flex-direction: column;
         position: absolute;
         top: 48px;
         left: 0;
         right: 0;
-        padding: 16px;
         background: #444;
+        padding: 16px;
       }
 
-      /* js toggles .is-open class */
-      .nav.is-open > .links {
+      .nav.is-open .links {
         visibility: visible;
       }
     }
+
 
   </style>
 </head>
