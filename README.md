@@ -73,4 +73,4 @@ day 7
 day 8
 --------------------------------------------------------------------------------
 - burger menu
-- T: work on your website
+- T: work on your website, ask for help
