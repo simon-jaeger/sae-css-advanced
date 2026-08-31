@@ -59,12 +59,15 @@ day 5
 day 6
 --------------------------------------------------------------------------------
 
-- responsive burger menu with media queries and dialog
+- subgrid
+- T: file explorer
 
 day 7
 --------------------------------------------------------------------------------
 
-- ???
+- advanced css patterns:
+- responsive burger menu with media queries and dialog
+- expansion panels with interpolate-size and :has()
 - T: prepare advanced topic presentations
 
 day 8
