@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 8px;
+        height: 100vh;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: 160px 1fr;
+        grid-template-rows: 80px 1fr 80px;
+        grid-template-areas:
+          "h h"
+          "a m"
+          "a f"
+      }
+
+      body > * {
+        border: 2px solid;
+        padding: 16px;
+      }
+
+      header {
+        grid-area: h;
+      }
+
+      aside {
+        grid-area: a;
+      }
+
+      main {
+        grid-area: m;
+        overflow-y: auto;
+      }
+
+      footer {
+        grid-area: f;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>header</header>
+    <aside>aside</aside>
+    <main>
+      <h2>main</h2>
+      <p>
+        Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis, sodales eu felis
+        ut, efficitur eleifend ligula. Maecenas vehicula volutpat tortor, vitae convallis
+        felis molestie eu. Morbi tincidunt tristique orci, et blandit nibh pulvinar quis.
+        Fusce massa enim, euismod at sapien eget, vestibulum consectetur sem. In sagittis
+        eros vel justo lobortis porta. Nulla hendrerit ornare massa, a convallis purus
+        iaculis vel. Proin vel purus sit amet est imperdiet varius. Sed fringilla sed
+        risus sit amet convallis. Nam non euismod mauris, vitae mattis elit. Vestibulum
+        diam nibh, lacinia non nisi pharetra, ornare mattis felis. Nulla venenatis sem
+        quis enim dignissim fringilla.
+      </p>
+      <p>
+        Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis, sodales eu felis
+        ut, efficitur eleifend ligula. Maecenas vehicula volutpat tortor, vitae convallis
+        felis molestie eu. Morbi tincidunt tristique orci, et blandit nibh pulvinar quis.
+        Fusce massa enim, euismod at sapien eget, vestibulum consectetur sem. In sagittis
+        eros vel justo lobortis porta. Nulla hendrerit ornare massa, a convallis purus
+        iaculis vel. Proin vel purus sit amet est imperdiet varius. Sed fringilla sed
+        risus sit amet convallis. Nam non euismod mauris, vitae mattis elit. Vestibulum
+        diam nibh, lacinia non nisi pharetra, ornare mattis felis. Nulla venenatis sem
+        quis enim dignissim fringilla.
+      </p>
+    </main>
+    <footer>footer</footer>
+  </body>
+</html>
