@@ -10,7 +10,7 @@ day 1
 - basic review
 - html template
 - global, page and inline css
-- css reset
+- css reset/base
 - display
 - box model
 - images
@@ -41,10 +41,11 @@ day 3
 day 4
 --------------------------------------------------------------------------------
 
-- grid: fluid
+- grid: fractions
+- grid: subgrid
 - T: https://cssgridgarden.com/
 - grid: area
-- T: build and show a grid landing page (https://lookup.design/landing-pages)
+- T: build and show a grid landing page (https://lookup.design/search?query=hero)
 
 day 5
 --------------------------------------------------------------------------------
@@ -52,26 +53,23 @@ day 5
 - media queries: basics
 - breakpoints
 - container queries
-- responsive grid areas
-- T: recreate and show the breakpoints of an existing website
-- R: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+- T: make the landing page responsive and show it
 
 day 6
 --------------------------------------------------------------------------------
 
-- subgrid
-- T: file explorer
+- expansion panels with checkbox trick
+- responsive burger menu with popover
+- T: prepare advanced component and presentation
 
 day 7
 --------------------------------------------------------------------------------
 
-- advanced css patterns:
-- expansion panels with checkbox trick
-- responsive burger menu with popover
-- T: prepare advanced topic presentations
+- T: advanced component presentations
+- T: work on your website, ask for help
 
 day 8
 --------------------------------------------------------------------------------
 
-- T: advanced topic presentations
+- T: file explorer (switch between details flex and thumbnail grid)
 - T: work on your website, ask for help

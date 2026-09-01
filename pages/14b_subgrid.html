@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <style>
+      section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+      }
+
+      article {
+        border: 1px solid;
+        padding: 8px;
+        grid-row: span 3;
+        display: grid;
+        grid-template-rows: subgrid;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <article>
+        <h3>John Doe | Developer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Contact now</a>
+      </article>
+      <article>
+        <h3>Mary Sue | Head of Strategic Investment</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra
+          tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum.
+        </p>
+        <a href="#">Contact now</a>
+      </article>
+    </section>
+  </body>
+</html>
