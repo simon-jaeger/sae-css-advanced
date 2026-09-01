@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      main {
+        padding: 16px;
+      }
+
+      nav {
+        anchor-name: --nav;
+        position: sticky;
+        top: 0;
+        display: flex;
+        height: 56px;
+        border-bottom: 1px solid;
+        background: #000;
+      }
+
+      nav > button {
+        padding: 16px;
+      }
+
+      nav > button[command="show-popover"] {
+        &:has(~ :popover-open) {
+          display: none;
+        }
+      }
+
+      nav > button[command="hide-popover"] {
+        display: none;
+        &:has(~ :popover-open) {
+          display: block;
+        }
+      }
+
+      #links {
+        position-anchor: --nav;
+        top: anchor(end);
+        width: 100%;
+        background: #222;
+      }
+
+      #links > a {
+        display: block;
+        text-decoration: none;
+        padding: 18px;
+        &:hover {
+          background: #333;
+        }
+      }
+
+      @media (width > 800px) {
+        nav > button {
+          display: none;
+        }
+
+        #links {
+          position: static;
+          display: flex;
+          background: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <button command="show-popover" commandfor="links">
+        <img src="/assets/icons/menu.svg" alt="menu" height="24" />
+      </button>
+      <button command="hide-popover" commandfor="links">
+        <img src="/assets/icons/close.svg" alt="menu" height="24" />
+      </button>
+      <div id="links" popover="manual">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Legal</a>
+      </div>
+    </nav>
+
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra
+        tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum.
+        Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie,
+        eget consequat enim commodo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra
+        tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum.
+        Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie,
+        eget consequat enim commodo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra
+        tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum.
+        Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie,
+        eget consequat enim commodo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra
+        tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum.
+        Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie,
+        eget consequat enim commodo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra
+        tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum.
+        Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie,
+        eget consequat enim commodo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra
+        tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum.
+        Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie,
+        eget consequat enim commodo.
+      </p>
+    </main>
+  </body>
+</html>

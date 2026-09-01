@@ -22,7 +22,7 @@
         overflow: auto;
 
         container-name: sidebar;
-        container-type: inline-size;
+        container-type: size;
       }
 
       .sidebar > a {
@@ -32,20 +32,18 @@
         color: white;
         text-decoration: none;
         padding: 12px;
-      }
-
-      .sidebar > a:hover {
-        background: #444;
+        &:hover {
+          background: #444;
+        }
       }
 
       @container sidebar (width < 200px) {
-        .sidebar > a > span:nth-child(2) {
-          display: none;
-        }
-
         .sidebar > a > span:nth-child(1) {
           font-size: 32px;
           margin: 0 auto;
+        }
+        .sidebar > a > span:nth-child(2) {
+          display: none;
         }
       }
     </style>

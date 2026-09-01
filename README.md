@@ -66,8 +66,8 @@ day 7
 --------------------------------------------------------------------------------
 
 - advanced css patterns:
-- responsive burger menu with media queries and dialog
-- expansion panels with interpolate-size and :has()
+- expansion panels with checkbox trick
+- responsive burger menu with popover
 - T: prepare advanced topic presentations
 
 day 8
