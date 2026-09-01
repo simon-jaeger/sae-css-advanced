@@ -31,11 +31,11 @@ day 2
 day 3
 --------------------------------------------------------------------------------
 
-- grid: static
+- grid: basics
 - T: calculator
-- grid: explicit
+- grid: placement
 - T: tetris
-- grid: repeat()
+- grid: repeat
 - T: pixel art
 
 day 4
