@@ -22,7 +22,7 @@
         padding: 8px;
       }
 
-      .tabs > header > :checked + label {
+      .tabs > header > input:checked + label {
         background: #ccc;
         color: #000;
       }
@@ -32,13 +32,13 @@
         padding: 16px;
       }
 
-      .tabs:has(:nth-of-type(1):checked) > article:nth-of-type(1) {
+      .tabs:has(input:nth-of-type(1):checked) > article:nth-of-type(1) {
         display: block;
       }
-      .tabs:has(:nth-of-type(2):checked) > article:nth-of-type(2) {
+      .tabs:has(input:nth-of-type(2):checked) > article:nth-of-type(2) {
         display: block;
       }
-      .tabs:has(:nth-of-type(3):checked) > article:nth-of-type(3) {
+      .tabs:has(input:nth-of-type(3):checked) > article:nth-of-type(3) {
         display: block;
       }
     </style>
