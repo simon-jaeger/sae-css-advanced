@@ -3,6 +3,7 @@ body {
   background: #000;
   color: #ccc;
   font-family: system-ui;
+  -webkit-font-smoothing: antialiased
 }
 
 * {
@@ -14,22 +15,25 @@ a {
   color: inherit;
 }
 
-img {
+img,
+button,
+label,
+input,
+textarea {
   display: block;
 }
 
 button {
-  display: block;
-  background: none;
-  border: none;
   padding: 0;
+  border: 0;
+  background: none;
   cursor: pointer;
 }
 
 [popover] {
-  margin: 0;
   padding: 0;
-  border: none;
+  border: 0;
+  margin: 0;
   background: none;
   color: inherit;
 }

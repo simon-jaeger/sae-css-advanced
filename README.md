@@ -35,19 +35,23 @@ day 3
 - T: calculator
 - grid: placement
 - T: tetris
-- grid: repeat
-- T: pixel art
 
 day 4
 --------------------------------------------------------------------------------
 
+- grid: repeat
+- T: pixel art
 - grid: fractions
-- grid: subgrid
-- T: https://cssgridgarden.com/
-- grid: area
-- T: build and show a grid landing page (https://lookup.design/search?query=hero)
+- T: calendar
 
 day 5
+--------------------------------------------------------------------------------
+
+- grid: area
+- T: build and show a grid landing page (https://lookup.design/search?query=hero)
+- T: https://cssgridgarden.com/
+
+day 6
 --------------------------------------------------------------------------------
 
 - media queries: basics
@@ -55,21 +59,15 @@ day 5
 - container queries
 - T: make the landing page responsive and show it
 
-day 6
---------------------------------------------------------------------------------
-
-- expansion panels with checkbox trick
-- responsive burger menu with popover
-- T: prepare advanced component and presentation
-
 day 7
 --------------------------------------------------------------------------------
 
-- T: advanced component presentations
-- T: work on your website, ask for help
+- expansion panels (checkbox)
+- responsive burger menu (popover)
+- T: prepare advanced component and presentation
 
 day 8
 --------------------------------------------------------------------------------
 
+- T: advanced component presentations
 - T: file explorer (switch between details flex and thumbnail grid)
-- T: work on your website, ask for help

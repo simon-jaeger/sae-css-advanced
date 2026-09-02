@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <style>
+      .tabs {
+        border: 1px solid;
+      }
+
+      .tabs > header {
+        display: flex;
+        gap: 16px;
+        padding: 8px;
+        border-bottom: 1px solid;
+      }
+
+      .tabs > article {
+        display: none;
+        &:has(:checked) {
+          display: block;
+          padding: 8px;
+        }
+      }
+
+      .tabs > article > input {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="tabs">
+      <header>
+        <label for="html">HTML</label>
+        <label for="css">CSS</label>
+        <label for="js">JavaScript</label>
+      </header>
+      <article>
+        <input id="html" type="radio" name="langs" checked/>
+        <p>
+          HTML is the technology that defines the content and structure of any website.
+          Written properly, it should also define the semantics (meaning) of the content
+          in a machine-readable way, which is vital for accessibility, search engine
+          optimization, and making use of the built-in features browsers provide for
+          content to work optimally.
+        </p>
+      </article>
+      <article>
+        <input id="css" type="radio" name="langs" />
+        <p>
+          Cascading Style Sheets (CSS) is a stylesheet language used to describe the
+          presentation of a document written in HTML. CSS describes how elements should be
+          rendered on screen, on paper, in speech, or on other media.
+        </p>
+      </article>
+      <article>
+        <input id="js" type="radio" name="langs" />
+        <p>
+          JavaScript (JS) is a programming language and core technology of the Web,
+          alongside HTML and CSS. Created by Brendan Eich in 1995, it is maintained by
+          Ecma International's TC39 technical committee, with related Web APIs maintained
+          by W3C and WHATWG. As of 2025, JavaScript is the most widely used programming
+          language on GitHub.
+        </p>
+      </article>
+    </section>
+    <!--    <div class="panel">-->
+    <!--      <label for="html">HTML</label>-->
+    <!--      <input id="html" type="radio" />-->
+    <!--      <p>-->
+    <!--        HTML is the technology that defines the content and structure of any website.-->
+    <!--        Written properly, it should also define the semantics (meaning) of the content in-->
+    <!--        a machine-readable way, which is vital for accessibility, search engine-->
+    <!--        optimization, and making use of the built-in features browsers provide for content-->
+    <!--        to work optimally.-->
+    <!--      </p>-->
+    <!--    </div>-->
+
+    <!--    <div class="panel">-->
+    <!--      <label for="css">CSS</label>-->
+    <!--      <input id="css" type="radio" />-->
+    <!--      <p>-->
+    <!--        Cascading Style Sheets (CSS) is a stylesheet language used to describe the-->
+    <!--        presentation of a document written in HTML. CSS describes how elements should be-->
+    <!--        rendered on screen, on paper, in speech, or on other media.-->
+    <!--      </p>-->
+    <!--    </div>-->
+
+    <!--    <div class="panel">-->
+    <!--      <label for="js">JavaScript</label>-->
+    <!--      <input id="js" type="radio" />-->
+    <!--      <p>-->
+    <!--        JavaScript (JS) is a programming language and core technology of the Web,-->
+    <!--        alongside HTML and CSS. Created by Brendan Eich in 1995, it is maintained by Ecma-->
+    <!--        International's TC39 technical committee, with related Web APIs maintained by W3C-->
+    <!--        and WHATWG. As of 2025, JavaScript is the most widely used programming language on-->
+    <!--        GitHub.-->
+    <!--      </p>-->
+    <!--    </div>-->
+  </body>
+</html>

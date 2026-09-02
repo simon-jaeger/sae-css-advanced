@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <style>
+      .calendar {
+        position: relative;
+        background: #ccc;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(4, 90px);
+        gap: 1px;
+        border: 1px solid;
+      }
+
+      .grid:nth-child(1) > div {
+        padding: 4px;
+        background: #000;
+        &:nth-child(7n) {
+          background: #333;
+        }
+      }
+
+      .grid:nth-child(2) {
+        position: absolute;
+        inset: 0;
+      }
+
+      .grid:nth-child(2) > div {
+        background: #ccc;
+        color: black;
+        padding: 8px;
+        margin: 8px;
+        margin-top: 46px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Calendar</h1>
+    <section class="calendar">
+      <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+        <div>21</div>
+        <div>22</div>
+        <div>23</div>
+        <div>24</div>
+        <div>25</div>
+        <div>26</div>
+        <div>27</div>
+        <div>28</div>
+      </div>
+      <div class="grid">
+        <div style="grid-column: span 2">SAE</div>
+        <div style="grid-column: 7">Party</div>
+        <div style="grid-column: span 2">SAE</div>
+        <div style="grid-column: 7">Hike</div>
+        <div style="grid-column: span 7">Vacation</div>
+        <div style="grid-column: span 2">SAE</div>
+        <div style="grid-column: 6 / span 2">Festival</div>
+      </div>
+    </section>
+  </body>
+</html>
