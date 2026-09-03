@@ -7,7 +7,7 @@ day 1
 --------------------------------------------------------------------------------
 
 - T: introductions
-- basic review
+- basics review
 - html template
 - global, page and inline css
 - css reset/base
@@ -16,7 +16,7 @@ day 1
 - images
 - position
 - scroll anchors
-- T: build and show a simple one-page website
+- T: build and show a simple one-page website about yourself
 - R: https://internetingishard.netlify.app/html-and-css/
 
 day 2
@@ -62,8 +62,9 @@ day 6
 day 7
 --------------------------------------------------------------------------------
 
-- expansion panels (checkbox)
-- responsive burger menu (popover)
+- details with transition (allow-keywords, allow-discrete)
+- tabs (radio button trick)
+- burger menu (command, popover)
 - T: prepare advanced component and presentation
 
 day 8

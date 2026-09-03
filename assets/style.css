@@ -35,7 +35,8 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
   display: block;
   background: none;
   border: 1px solid currentColor;
@@ -43,6 +44,7 @@ textarea {
   color: inherit;
 }
 
+dialog,
 [popover] {
   padding: 0;
   border: 0;

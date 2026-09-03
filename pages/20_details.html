@@ -6,71 +6,65 @@
     <link rel="stylesheet" href="/assets/style.css" />
     <style>
       .panel {
-        position: relative;
         border: 1px solid;
-        height: 36px;
-        overflow: hidden;
-        transition: height 300ms;
-        interpolate-size: allow-keywords; /* enables transitions from/to auto */
       }
 
-      .panel:has(input:checked) {
+      .panel > summary {
+        padding: 8px;
+        cursor: pointer;
+        user-select: none;
+        /*list-style: none;*/
+      }
+
+      .panel::details-content {
+        height: 0;
+        overflow: hidden;
+        interpolate-size: allow-keywords; /* enables auto */
+        transition-behavior: allow-discrete; /* enables hidden, none */
+        transition-property: height, content-visibility;
+        transition-duration: 300ms;
+      }
+
+      .panel:open::details-content {
         height: auto;
       }
 
-      .panel > input {
-        /*display: none;*/
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-
-      .panel > label {
-        display: block;
-        user-select: none;
-        cursor: pointer;
+      .panel > div {
         padding: 8px;
-      }
-
-      .panel > p {
-        padding: 0 8px;
       }
     </style>
   </head>
 
   <body>
-    <div class="panel">
-      <label for="html">HTML</label>
-      <input id="html" type="checkbox" />
-      <p>
+    <details class="panel" open>
+      <summary>HTML</summary>
+      <div>
         HTML is the technology that defines the content and structure of any website.
         Written properly, it should also define the semantics (meaning) of the content in
         a machine-readable way, which is vital for accessibility, search engine
         optimization, and making use of the built-in features browsers provide for content
         to work optimally.
-      </p>
-    </div>
+      </div>
+    </details>
 
-    <div class="panel">
-      <label for="css">CSS</label>
-      <input id="css" type="checkbox" />
-      <p>
+    <details class="panel">
+      <summary>CSS</summary>
+      <div>
         Cascading Style Sheets (CSS) is a stylesheet language used to describe the
         presentation of a document written in HTML. CSS describes how elements should be
         rendered on screen, on paper, in speech, or on other media.
-      </p>
-    </div>
+      </div>
+    </details>
 
-    <div class="panel">
-      <label for="js">JavaScript</label>
-      <input id="js" type="checkbox" />
-      <p>
+    <details class="panel">
+      <summary>JavaScript</summary>
+      <div>
         JavaScript (JS) is a programming language and core technology of the Web,
         alongside HTML and CSS. Created by Brendan Eich in 1995, it is maintained by Ecma
         International's TC39 technical committee, with related Web APIs maintained by W3C
         and WHATWG. As of 2025, JavaScript is the most widely used programming language on
         GitHub.
-      </p>
-    </div>
+      </div>
+    </details>
   </body>
 </html>
