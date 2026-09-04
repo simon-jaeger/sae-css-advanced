@@ -48,18 +48,18 @@ day 5
 --------------------------------------------------------------------------------
 
 - grid: area
-- T: build and show a grid landing page (https://lookup.design/search?query=hero)
+- T: replicate and show an application layout with areas
 - grid: subgrid
 - T: file explorer
-- T: https://cssgridgarden.com/
 
 day 6
 --------------------------------------------------------------------------------
 
+- T: https://cssgridgarden.com/
 - media queries: basics
 - breakpoints
 - container queries
-- T: make the landing page responsive and show it
+- T: build and show a responsive grid landing page (https://lookup.design/search?query=hero)
 
 day 7
 --------------------------------------------------------------------------------
@@ -73,4 +73,4 @@ day 8
 --------------------------------------------------------------------------------
 
 - T: advanced component presentations
-- T: file explorer (switch between details flex and thumbnail grid)
+- T: work on your projects, ask questions etc.

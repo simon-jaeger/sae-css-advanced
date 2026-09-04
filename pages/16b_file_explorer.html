@@ -13,7 +13,7 @@
       body:has(input#list-view:checked) {
         section {
           display: grid;
-          grid-template-columns: auto 1fr auto auto;
+          grid-template-columns: 1fr auto auto auto;
           border: 1px solid;
         }
 
@@ -50,6 +50,7 @@
         section > * {
           display: grid;
           grid-template-columns: 1fr 1fr;
+          gap: 8px;
           border: 1px solid;
           padding: 8px;
 
@@ -59,16 +60,19 @@
         }
 
         section > * > * {
-          display: block;
-
-          &:nth-of-type(2) {
-            visibility: hidden;
-          }
-
           &:is(img) {
             grid-column: 1/-1;
             width: 100%;
-            margin-bottom: 8px;
+          }
+
+          &:first-of-type {
+            grid-column: 1/-1;
+          }
+          &:nth-of-type(2) {
+            display: none;
+          }
+          &:last-of-type {
+            text-align: right;
           }
         }
       }
@@ -111,6 +115,69 @@
         <span>Music</span>
         <span>5mb</span>
         <span>13.08.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>invoice.pdf</span>
+        <span>PDF</span>
+        <span>128kb</span>
+        <span>02.09.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>budget.xlsx</span>
+        <span>Spreadsheet</span>
+        <span>42kb</span>
+        <span>30.08.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>presentation.pptx</span>
+        <span>Presentation</span>
+        <span>7mb</span>
+        <span>25.08.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>report.docx</span>
+        <span>Document</span>
+        <span>84kb</span>
+        <span>18.08.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>vacation.mp4</span>
+        <span>Video</span>
+        <span>420mb</span>
+        <span>15.08.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>archive.zip</span>
+        <span>Archive</span>
+        <span>15mb</span>
+        <span>11.08.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>logo.svg</span>
+        <span>Image</span>
+        <span>12kb</span>
+        <span>09.08.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>setup.exe</span>
+        <span>Application</span>
+        <span>65mb</span>
+        <span>29.07.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>podcast.mp3</span>
+        <span>Music</span>
+        <span>48mb</span>
+        <span>19.07.2026</span>
       </div>
     </section>
   </body>
