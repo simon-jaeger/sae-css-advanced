@@ -49,6 +49,8 @@ day 5
 
 - grid: area
 - T: build and show a grid landing page (https://lookup.design/search?query=hero)
+- grid: subgrid
+- T: file explorer
 - T: https://cssgridgarden.com/
 
 day 6

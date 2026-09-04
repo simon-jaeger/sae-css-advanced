@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <style>
+      section {
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        border: 1px solid;
+      }
+
+      section > * {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: subgrid;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid;
+        }
+
+        &:is(header) {
+          background: #333;
+        }
+      }
+
+      section > * > * {
+        padding: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Subgrid</h1>
+    <section>
+      <header>
+        <span>Name</span>
+        <span>Type</span>
+        <span>Size</span>
+        <span>Modified</span>
+      </header>
+      <div>
+        <span>note.txt</span>
+        <span>Text</span>
+        <span>5kb</span>
+        <span>21.09.2026</span>
+      </div>
+      <div>
+        <span>selfie.jpeg</span>
+        <span>Image</span>
+        <span>3mb</span>
+        <span>08.08.2026</span>
+      </div>
+      <div>
+        <span>song.mp3</span>
+        <span>Music</span>
+        <span>5mb</span>
+        <span>13.08.2026</span>
+      </div>
+    </section>
+  </body>
+</html>

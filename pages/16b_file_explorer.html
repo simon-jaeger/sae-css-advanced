@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <style>
+      form {
+        display: flex;
+        margin-bottom: 16px;
+      }
+
+      body:has(input#list-view:checked) {
+        section {
+          display: grid;
+          grid-template-columns: auto 1fr auto auto;
+          border: 1px solid;
+        }
+
+        section > * {
+          grid-column: 1/-1;
+          display: grid;
+          grid-template-columns: subgrid;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid;
+          }
+
+          &:is(header) {
+            background: #333;
+          }
+        }
+
+        section > * > * {
+          padding: 8px;
+
+          &:is(img) {
+            display: none;
+          }
+        }
+      }
+
+      body:has(input#thumbnail-view:checked) {
+        section {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+          gap: 8px;
+        }
+
+        section > * {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          border: 1px solid;
+          padding: 8px;
+
+          &:is(header) {
+            display: none;
+          }
+        }
+
+        section > * > * {
+          display: block;
+
+          &:nth-of-type(2) {
+            visibility: hidden;
+          }
+
+          &:is(img) {
+            grid-column: 1/-1;
+            width: 100%;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>File explorer</h1>
+    <form>
+      <input id="list-view" type="radio" name="layout" />
+      <label for="list-view">List view</label>
+      <span style="width: 16px"></span>
+      <input id="thumbnail-view" type="radio" name="layout" checked />
+      <label for="thumbnail-view">Thumbnail view</label>
+    </form>
+    <section>
+      <header>
+        <span>Name</span>
+        <span>Type</span>
+        <span>Size</span>
+        <span>Modified</span>
+      </header>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>note.txt</span>
+        <span>Text</span>
+        <span>5kb</span>
+        <span>21.09.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>selfie.jpeg</span>
+        <span>Image</span>
+        <span>3mb</span>
+        <span>08.08.2026</span>
+      </div>
+      <div>
+        <img src="https://placehold.co/100x50" alt="" />
+        <span>song.mp3</span>
+        <span>Music</span>
+        <span>5mb</span>
+        <span>13.08.2026</span>
+      </div>
+    </section>
+  </body>
+</html>
