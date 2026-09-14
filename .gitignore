@@ -1,6 +1,5 @@
-.idea
-.vscode
 .DS_Store
-node_modules
 
-tmp.txt
+.idea/
+.vscode/
+node_modules/

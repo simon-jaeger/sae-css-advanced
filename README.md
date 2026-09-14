@@ -7,4 +7,14 @@ day 1
 --------------------------------------------------------------------------------
 
 - T: introductions
-
+- basics review
+- html template
+- global, page and inline css
+- css reset/base
+- display
+- box model
+- images
+- position
+- scroll anchors
+- T: build and show a simple one-page website about yourself
+- R: https://internetingishard.netlify.app/html-and-css/
