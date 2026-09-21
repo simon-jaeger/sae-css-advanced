@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <style>
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      border: 1px solid;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    dialog {
+      background: #111;
+      margin: auto;
+      padding: 16px;
+      border: 1px solid #444;
+      border-radius: 8px;
+    }
+
+    dialog footer {
+      display: flex;
+      justify-content: end;
+      gap: 8px;
+    }
+
+    dialog button {
+      border: 1px solid;
+      padding: 8px;
+    }
+
+    dialog::backdrop {
+      background: #000b;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span>My Article</span>
+    <button command="show-modal" commandfor="dialog-delete">Delete</button>
+  </header>
+
+  <article>
+    <h1>My article</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+  </article>
+
+  <dialog id="dialog-delete" closedby="any">
+    <p>Are you sure you want to delete [My article]?</p>
+    <footer>
+      <button commandfor="dialog-delete" command="close">Cancel</button>
+      <button commandfor="dialog-delete" command="close">Yes</button>
+    </footer>
+  </dialog>
+
+  <script>
+    // force open state for testing
+    document.getElementById("dialog-delete").showModal()
+  </script>
+</body>
+</html>

@@ -35,20 +35,21 @@ day 3
 - T: calculator
 - grid: placement
 - T: tetris
+- grid: repeat
+- T: pixel art
 
 day 4
 --------------------------------------------------------------------------------
 
-- grid: repeat
-- T: pixel art
 - grid: fractions
 - T: calendar
+- grid: area
+- T: replicate and show an application layout with areas
 
 day 5
 --------------------------------------------------------------------------------
 
-- grid: area
-- T: replicate and show an application layout with areas
+- grid: lanes
 - grid: subgrid
 - T: file explorer
 
@@ -66,7 +67,8 @@ day 7
 
 - details with transition (allow-keywords, allow-discrete)
 - tabs (radio button trick)
-- burger menu (command, popover)
+- dialog (with show-modal)
+- burger menu (with show-popover)
 - T: prepare advanced component and presentation
 
 day 8
