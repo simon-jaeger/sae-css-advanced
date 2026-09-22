@@ -44,7 +44,8 @@ day 4
 - grid: fractions
 - T: calendar
 - grid: area
-- T: replicate and show an application layout with areas
+- T: page layout
+- T: build and show a landing page (https://lookup.design, https://land-book.com)
 
 day 5
 --------------------------------------------------------------------------------
@@ -56,11 +57,10 @@ day 5
 day 6
 --------------------------------------------------------------------------------
 
-- T: https://cssgridgarden.com/
 - media queries: basics
 - breakpoints
 - container queries
-- T: build and show a responsive grid landing page (https://lookup.design/search?query=hero)
+- T: build and show a responsive landing page (https://lookup.design, https://land-book.com)
 
 day 7
 --------------------------------------------------------------------------------
