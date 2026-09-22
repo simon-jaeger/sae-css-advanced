@@ -5,72 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/assets/style.css" />
     <style>
-      body {
-        margin: 0;
-        padding: 8px;
-        height: 100vh;
+      section {
         display: grid;
         gap: 8px;
-        grid-template-columns: 160px 1fr;
-        grid-template-rows: 80px 1fr 80px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 80px);
         grid-template-areas:
-          "h h"
-          "a m"
-          "a f";
+          "aside header header"
+          "aside main main"
+          "aside main main";
       }
 
-      body > * {
-        border: 1px solid;
+      div {
         padding: 16px;
+        border: 1px solid;
       }
 
-      header {
-        grid-area: h;
+      div:nth-child(1) {
+        grid-area: main;
       }
 
-      aside {
-        grid-area: a;
+      div:nth-child(2) {
+        grid-area: header;
       }
 
-      main {
-        grid-area: m;
-        overflow-y: auto;
-      }
-
-      footer {
-        grid-area: f;
+      div:nth-child(3) {
+        grid-area: aside;
       }
     </style>
   </head>
 
   <body>
-    <header>header</header>
-    <aside>aside</aside>
-    <main>
-      <h2>main</h2>
-      <p>
-        Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis, sodales eu felis
-        ut, efficitur eleifend ligula. Maecenas vehicula volutpat tortor, vitae convallis
-        felis molestie eu. Morbi tincidunt tristique orci, et blandit nibh pulvinar quis.
-        Fusce massa enim, euismod at sapien eget, vestibulum consectetur sem. In sagittis
-        eros vel justo lobortis porta. Nulla hendrerit ornare massa, a convallis purus
-        iaculis vel. Proin vel purus sit amet est imperdiet varius. Sed fringilla sed
-        risus sit amet convallis. Nam non euismod mauris, vitae mattis elit. Vestibulum
-        diam nibh, lacinia non nisi pharetra, ornare mattis felis. Nulla venenatis sem
-        quis enim dignissim fringilla.
-      </p>
-      <p>
-        Aenean sed lacus at eros faucibus maximus. Quisque lectus turpis, sodales eu felis
-        ut, efficitur eleifend ligula. Maecenas vehicula volutpat tortor, vitae convallis
-        felis molestie eu. Morbi tincidunt tristique orci, et blandit nibh pulvinar quis.
-        Fusce massa enim, euismod at sapien eget, vestibulum consectetur sem. In sagittis
-        eros vel justo lobortis porta. Nulla hendrerit ornare massa, a convallis purus
-        iaculis vel. Proin vel purus sit amet est imperdiet varius. Sed fringilla sed
-        risus sit amet convallis. Nam non euismod mauris, vitae mattis elit. Vestibulum
-        diam nibh, lacinia non nisi pharetra, ornare mattis felis. Nulla venenatis sem
-        quis enim dignissim fringilla.
-      </p>
-    </main>
-    <footer>footer</footer>
+    <section>
+      <div>1</div>
+      <div>header</div>
+      <div>sidebar</div>
+<!--      <div>4</div>-->
+<!--      <div>5</div>-->
+<!--      <div>6</div>-->
+<!--      <div>7</div>-->
+<!--      <div>8</div>-->
+<!--      <div>9</div>-->
+    </section>
   </body>
 </html>
