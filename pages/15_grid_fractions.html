@@ -7,21 +7,14 @@
     <style>
       section {
         display: grid;
-        grid-template-columns: 80px 80px 80px 80px;
-        grid-template-rows: 80px 80px 80px;
+        gap: 10px;
+        /*grid-template-columns: repeat(3, 150px);*/
+        grid-template-columns: 1fr 1fr 1fr;
       }
 
       div {
         padding: 16px;
         border: 1px solid;
-      }
-
-      div:nth-child(8) {
-        grid-row: span 2;
-      }
-
-      div:nth-child(9) {
-        grid-column: span 2;
       }
     </style>
   </head>
@@ -38,6 +31,8 @@
       <div>8</div>
       <div>9</div>
       <div>10</div>
+      <div>11</div>
+      <div>12</div>
     </section>
   </body>
 </html>
