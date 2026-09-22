@@ -44,4 +44,4 @@ day 4
 - grid: fractions
 - T: calendar
 - grid: area
-- T: replicate and show an application layout with areas
+- T: page layout

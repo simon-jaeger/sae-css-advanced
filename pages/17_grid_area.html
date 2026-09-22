@@ -11,9 +11,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 80px);
         grid-template-areas:
-          "aside header header"
-          "aside main main"
-          "aside main main";
+          "sidebar header  header"
+          "sidebar content content"
+          "sidebar content content";
       }
 
       div {
@@ -22,15 +22,15 @@
       }
 
       div:nth-child(1) {
-        grid-area: main;
-      }
-
-      div:nth-child(2) {
         grid-area: header;
       }
 
+      div:nth-child(2) {
+        grid-area: content;
+      }
+
       div:nth-child(3) {
-        grid-area: aside;
+        grid-area: sidebar;
       }
     </style>
   </head>
@@ -38,14 +38,8 @@
   <body>
     <section>
       <div>1</div>
-      <div>header</div>
-      <div>sidebar</div>
-<!--      <div>4</div>-->
-<!--      <div>5</div>-->
-<!--      <div>6</div>-->
-<!--      <div>7</div>-->
-<!--      <div>8</div>-->
-<!--      <div>9</div>-->
+      <div>2</div>
+      <div>3</div>
     </section>
   </body>
 </html>
