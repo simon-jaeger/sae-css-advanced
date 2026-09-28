@@ -45,3 +45,20 @@ day 4
 - T: calendar
 - grid: area
 - T: page layout
+
+day 6
+--------------------------------------------------------------------------------
+
+- aspect ratio and object fit 
+- hover overlays
+- media queries: basics
+- breakpoints
+- container queries
+- T: build and show a responsive landing page (https://lookup.design, https://land-book.com)
+
+day 5
+--------------------------------------------------------------------------------
+
+- grid: lanes
+- grid: subgrid
+- T: file explorer
