@@ -1,181 +1,182 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/assets/style.css" />
-    <style>
-      form {
-        display: flex;
-        margin-bottom: 16px;
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <style>
+    form {
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    body:has(input#list-view:checked) {
+      section {
+        border: 1px solid;
       }
 
-      body:has(input#list-view:checked) {
-        section {
-          border: 1px solid;
-        }
+      section > * {
+        display: grid;
+        grid-template-columns: 1fr 120px 80px 100px;
+        border-bottom: 1px solid;
 
-        section > * {
-          display: grid;
-          grid-template-columns: 1fr 120px 80px 100px;
-
-          &:not(:last-child) {
-            border-bottom: 1px solid;
-          }
-
-          &:is(header) {
-            background: #333;
-          }
-        }
-
-        section > * > * {
-          padding: 8px;
-
-          &:is(img) {
-            display: none;
-          }
+        &:last-child {
+          border-bottom: 0;
         }
       }
 
-      body:has(input#thumbnail-view:checked) {
-        section {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-          gap: 8px;
-        }
-
-        section > * {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 8px;
-          border: 1px solid;
-          padding: 8px;
-
-          &:is(header) {
-            display: none;
-          }
-        }
-
-        section > * > * {
-          &:is(img) {
-            grid-column: 1/-1;
-            width: 100%;
-          }
-
-          &:first-of-type {
-            grid-column: 1/-1;
-          }
-          &:nth-of-type(2) {
-            display: none;
-          }
-          &:last-of-type {
-            text-align: right;
-          }
-        }
+      section > header {
+        background: #333;
       }
-    </style>
-  </head>
 
-  <body>
-    <h1>File explorer</h1>
-    <form>
-      <input id="list-view" type="radio" name="layout" checked />
-      <label for="list-view">List view</label>
-      <span style="width: 16px"></span>
-      <input id="thumbnail-view" type="radio" name="layout" />
-      <label for="thumbnail-view">Thumbnail view</label>
-    </form>
-    <section>
-      <header>
-        <span>Name</span>
-        <span>Type</span>
-        <span>Size</span>
-        <span>Modified</span>
-      </header>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>note.txt</span>
-        <span>Text</span>
-        <span>5kb</span>
-        <span>21.09.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>selfie.jpeg</span>
-        <span>Image</span>
-        <span>3mb</span>
-        <span>08.08.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>song.mp3</span>
-        <span>Music</span>
-        <span>5mb</span>
-        <span>13.08.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>invoice.pdf</span>
-        <span>PDF</span>
-        <span>128kb</span>
-        <span>02.09.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>budget.xlsx</span>
-        <span>Spreadsheet</span>
-        <span>42kb</span>
-        <span>30.08.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>presentation.pptx</span>
-        <span>Presentation</span>
-        <span>7mb</span>
-        <span>25.08.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>report.docx</span>
-        <span>Document</span>
-        <span>84kb</span>
-        <span>18.08.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>vacation.mp4</span>
-        <span>Video</span>
-        <span>420mb</span>
-        <span>15.08.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>archive.zip</span>
-        <span>Archive</span>
-        <span>15mb</span>
-        <span>11.08.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>logo.svg</span>
-        <span>Image</span>
-        <span>12kb</span>
-        <span>09.08.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>setup.exe</span>
-        <span>Application</span>
-        <span>65mb</span>
-        <span>29.07.2026</span>
-      </div>
-      <div>
-        <img src="https://placehold.co/100x50" alt="" />
-        <span>podcast.mp3</span>
-        <span>Music</span>
-        <span>48mb</span>
-        <span>19.07.2026</span>
-      </div>
-    </section>
-  </body>
+      section img {
+        display: none;
+      }
+
+      section span {
+        padding: 8px;
+      }
+    }
+
+    body:has(input#thumbnail-view:checked) {
+      section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+        gap: 8px;
+      }
+
+      section > * {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        border: 1px solid;
+        padding: 8px;
+      }
+
+      section > header {
+        display: none;
+      }
+
+      section img {
+        grid-column: span 2;
+        width: 100%;
+      }
+
+      section span:nth-of-type(1) {
+        grid-column: span 2;
+      }
+
+      section span:nth-of-type(2) {
+        display: none;
+      }
+
+      section span:nth-of-type(4) {
+        text-align: right;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>File explorer</h1>
+  <form>
+    <input id="list-view" type="radio" name="layout" />
+    <label for="list-view">List view</label>
+    <span style="width: 16px"></span>
+    <input id="thumbnail-view" type="radio" name="layout" checked />
+    <label for="thumbnail-view">Thumbnail view</label>
+  </form>
+  <section>
+    <header>
+      <span>Name</span>
+      <span>Type</span>
+      <span>Size</span>
+      <span>Modified</span>
+    </header>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>note.txt</span>
+      <span>Text</span>
+      <span>5kb</span>
+      <span>21.09.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>selfie.jpeg</span>
+      <span>Image</span>
+      <span>3mb</span>
+      <span>08.08.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>song.mp3</span>
+      <span>Music</span>
+      <span>5mb</span>
+      <span>13.08.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>invoice.pdf</span>
+      <span>PDF</span>
+      <span>128kb</span>
+      <span>02.09.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>budget.xlsx</span>
+      <span>Spreadsheet</span>
+      <span>42kb</span>
+      <span>30.08.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>presentation.pptx</span>
+      <span>Presentation</span>
+      <span>7mb</span>
+      <span>25.08.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>report.docx</span>
+      <span>Document</span>
+      <span>84kb</span>
+      <span>18.08.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>vacation.mp4</span>
+      <span>Video</span>
+      <span>420mb</span>
+      <span>15.08.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>archive.zip</span>
+      <span>Archive</span>
+      <span>15mb</span>
+      <span>11.08.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>logo.svg</span>
+      <span>Image</span>
+      <span>12kb</span>
+      <span>09.08.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>setup.exe</span>
+      <span>Application</span>
+      <span>65mb</span>
+      <span>29.07.2026</span>
+    </div>
+    <div>
+      <img src="https://placehold.co/100x50" alt="" />
+      <span>podcast.mp3</span>
+      <span>Music</span>
+      <span>48mb</span>
+      <span>19.07.2026</span>
+    </div>
+  </section>
+</body>
 </html>

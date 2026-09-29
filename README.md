@@ -49,15 +49,16 @@ day 4
 
 day 5
 --------------------------------------------------------------------------------
-
-- grid: lanes
-- grid: subgrid
+- aspect ratio and object fit 
+- hover overlays
+- grid: auto-fill
 - T: file explorer
+- grid: lanes
 
 day 6
 --------------------------------------------------------------------------------
 
-- media queries: basics
+- media queries: basics (earlier day in future years?)
 - breakpoints
 - container queries
 - T: build and show a responsive landing page (https://lookup.design, https://land-book.com)
