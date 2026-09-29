@@ -12,15 +12,12 @@
 
       body:has(input#list-view:checked) {
         section {
-          display: grid;
-          grid-template-columns: 1fr auto auto auto;
           border: 1px solid;
         }
 
         section > * {
-          grid-column: 1/-1;
           display: grid;
-          grid-template-columns: subgrid;
+          grid-template-columns: 1fr 120px 80px 100px;
 
           &:not(:last-child) {
             border-bottom: 1px solid;
@@ -82,10 +79,10 @@
   <body>
     <h1>File explorer</h1>
     <form>
-      <input id="list-view" type="radio" name="layout" />
+      <input id="list-view" type="radio" name="layout" checked />
       <label for="list-view">List view</label>
       <span style="width: 16px"></span>
-      <input id="thumbnail-view" type="radio" name="layout" checked />
+      <input id="thumbnail-view" type="radio" name="layout" />
       <label for="thumbnail-view">Thumbnail view</label>
     </form>
     <section>
