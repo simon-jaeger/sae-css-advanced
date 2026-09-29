@@ -46,7 +46,7 @@ day 4
 - grid: area
 - T: page layout
 
-day 6
+day 5
 --------------------------------------------------------------------------------
 
 - aspect ratio and object fit 
@@ -56,9 +56,8 @@ day 6
 - container queries
 - T: build and show a responsive landing page (https://lookup.design, https://land-book.com)
 
-day 5
+day 6
 --------------------------------------------------------------------------------
 
-- grid: lanes
-- grid: subgrid
+- grid: auto-fill
 - T: file explorer
