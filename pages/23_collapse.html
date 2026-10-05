@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/assets/style.css" />
     <style>
-      .panel {
+      .collapse {
         border: 1px solid;
       }
 
-      .panel > summary {
+      .collapse > summary {
         padding: 8px;
         cursor: pointer;
         user-select: none;
         /*list-style: none;*/
       }
 
-      .panel::details-content {
+      .collapse::details-content {
         height: 0;
         overflow: hidden;
         interpolate-size: allow-keywords; /* enables auto */
@@ -25,18 +25,18 @@
         transition-duration: 300ms;
       }
 
-      .panel:open::details-content {
+      .collapse:open::details-content {
         height: auto;
       }
 
-      .panel > div {
+      .collapse > div {
         padding: 8px;
       }
     </style>
   </head>
 
   <body>
-    <details class="panel" name="langs" open>
+    <details class="collapse" name="langs" open>
       <summary>HTML</summary>
       <div>
         HTML is the technology that defines the content and structure of any website.
@@ -47,7 +47,7 @@
       </div>
     </details>
 
-    <details class="panel" name="langs">
+    <details class="collapse" name="langs">
       <summary>CSS</summary>
       <div>
         Cascading Style Sheets (CSS) is a stylesheet language used to describe the
@@ -56,7 +56,7 @@
       </div>
     </details>
 
-    <details class="panel" name="langs">
+    <details class="collapse" name="langs">
       <summary>JavaScript</summary>
       <div>
         JavaScript (JS) is a programming language and core technology of the Web,

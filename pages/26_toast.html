@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/assets/style.css"/>
+  <style>
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      border: 1px solid;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    aside:popover-open {
+      display: flex;
+      gap: 24px;
+      inset: auto 16px 16px auto;
+      padding: 16px;
+      border: 1px solid;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span>My other Article</span>
+    <button command="show-popover" commandfor="toast">Save</button>
+  </header>
+
+  <article>
+    <h1>My article</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra tortor. Aliquam et nisi eros. Vestibulum aliquet metus et dui aliquet dictum. Phasellus molestie ac nunc nec luctus. In scelerisque risus vel diam molestie, eget consequat enim commodo.</p>
+  </article>
+
+  <aside id="toast" popover="auto">
+    <div>Saved successfully!</div>
+    <button command="hide-popover" commandfor="toast">X</button>
+  </aside>
+</body>
+</html>
