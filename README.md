@@ -11,6 +11,7 @@ day 1
 - html template
 - global, page and inline css
 - css reset/base
+- css nesting
 - display
 - box model
 - images
@@ -49,8 +50,6 @@ day 4
 day 5
 --------------------------------------------------------------------------------
 
-- aspect ratio and object fit 
-- hover overlays
 - media queries: basics
 - breakpoints
 - container queries
@@ -61,3 +60,21 @@ day 6
 
 - grid: auto-fill
 - T: file explorer
+- aspect ratio and object fit 
+- hover overlays
+
+day 7
+--------------------------------------------------------------------------------
+
+- collapse/accordion (allow-keywords, allow-discrete)
+- tabs (radio button trick)
+- dialog (with show-modal)
+- toast (with show-popover)
+- T: prepare advanced component and presentation
+
+day 8
+--------------------------------------------------------------------------------
+
+- burger menu
+- T: advanced component presentations
+- T: work on your projects, ask questions etc.
