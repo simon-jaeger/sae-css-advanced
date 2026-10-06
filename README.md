@@ -75,5 +75,7 @@ day 7
 day 8
 --------------------------------------------------------------------------------
 
+- anchor positioning
+- https://anchoreum.com/
 - T: advanced component presentations
 - T: work on your projects, ask questions etc.
