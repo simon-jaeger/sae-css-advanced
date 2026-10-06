@@ -76,5 +76,7 @@ day 8
 --------------------------------------------------------------------------------
 
 - burger menu
+- anchor positioning
+- https://anchoreum.com/
 - T: advanced component presentations
 - T: work on your projects, ask questions etc.
